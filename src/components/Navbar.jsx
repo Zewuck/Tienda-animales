@@ -8,10 +8,17 @@ export default function Navbar() {
       </Link>
       <ul>
         <li>
-            <Link to={"/"}>Inicio</Link>
-            <Link to={"/acerca"}>Acerca de</Link>
-            <Link to={"/contacto"}>Contacto</Link>
-            <Link to={"/tienda"}>tienda</Link>
+          <Link to={"/"}>Inicio</Link>
+        </li>
+        <li>
+          <Link to={"/acerca"}>Acerca de</Link>
+        </li>
+        <li>
+          <Link to={"/contacto"}>Contacto</Link>
+        </li>
+
+        <li>
+          <Link to={"/tienda"}>tienda</Link>
         </li>
       </ul>
     </div>
