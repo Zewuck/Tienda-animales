@@ -1,12 +1,16 @@
-import "./fondoinicio.css"
+import "./fondoinicio.css";
 
 export function FondoInicio() {
   return (
-    <div>
-      <img
-        src="https://i.postimg.cc/FzZL5HWG/wave.png"
-        className="fondo"
-      />
-    </div>
+    <>
+      <div className="background">
+        <div className="gato-container">
+          <img src={require("./imagen-gato.png")} className="gato" alt="" />
+          <div>
+            <img src={require("./wave.png")} className="fondo" alt="" />
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
