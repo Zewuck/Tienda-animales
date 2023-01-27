@@ -10,7 +10,7 @@ export function Inicio() {
         <button><Link to={"/acerca"}>IR A LA TIENDA</Link></button>
         <div className="gato-container">
           <img src={require("../imagen-gato.png")} className="gato" alt="" />
-            <img src={require("../wave.png")} className="fondo" alt="" />
+            <img src={require("../wave-pink.png")} className="fondo" alt="" />
         </div>
       </div>
       
