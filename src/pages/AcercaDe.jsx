@@ -31,6 +31,9 @@ export default function AcercaDe() {
         </p>
       </div>
       <div>
+        <img src="" alt="" />
+      </div>
+      <div>
         <h3>OUR HISTORY</h3>
         <h2>The Story of Vidyard</h2>
         <p>After meeting at the University of Waterloo, co-founders Michael Litt and Devon Galloway formed an innovative video startup that would ultimately graduate from the elite Y Combinator program. Since then, Vidyard has grown to include competitive features, integrations, and thought leadership that position us as a top video business platform.</p>
