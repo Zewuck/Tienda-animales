@@ -3,18 +3,34 @@ body {
 }
 
 .fondo {
-    position: absolute;
-    bottom: 0;
+    width: 100%;
+    margin-top: -550px;
+    height: 100px;
+    
 }
 
 .background {
-    background-color: #555;
+    background: #3494E6;  
+    background: -webkit-linear-gradient(to bottom, #EC6EAD, #3494E6);  
+    background: linear-gradient(to bottom, #EC6EAD, #3494E6);
+    width: 100%;
+    height: 100%;
+}
+
+.gato-container {
     width: 100%;
     height: 100%;
 }
 
 .gato {
-    width: 600px;
+    width: 400px;
     height: 600px;
     float: right;
+}
+
+.next {
+    margin-top: -4px;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
 }
