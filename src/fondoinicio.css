@@ -2,24 +2,38 @@ body {
     margin: 0;
 }
 
+.title {
+    color: #fff;
+    font-size: 70px;
+}
+
 .fondo {
     width: 100%;
     margin-top: -550px;
     height: 100px;
-    
+    filter: saturate(100%);
+    color: #7de0e9;
+}
+
+.fondoGato {
+    position: relative;
 }
 
 .background {
     background: #3494E6;  
-    background: -webkit-linear-gradient(to bottom, #EC6EAD, #3494E6);  
+    background: -webkit-linear-gradient(to bottom, #EC6EAD, #3494E6);
     background: linear-gradient(to bottom, #EC6EAD, #3494E6);
     width: 100%;
     height: 100%;
+    background-image: url(./fondo-gato.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .gato-container {
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .gato {
