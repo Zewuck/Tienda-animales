@@ -4,20 +4,24 @@ import { Link } from "react-router-dom";
 export function Inicio() {
   return (
     <>
-      <div className="background">
-        <h1 className="title">Cat's Shop</h1>
-        <p>
-          Elige la comida para perro o gato favorita y en menos de tres horas
-          estará en la puerta de tu casa, también puedes programar la entrega en
-          el horario de tu elección.
-        </p>
-        <button>
-          <Link to={"/tienda"}>IR A LA TIENDA</Link>
-        </button>
-        <div className="gato-container">
-          <img src={require("../imagen-gato.png")} className="gato" alt="" />
+      <div className="background row">
+        <div className="textoInicioFondo col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <h1 className="title">Cat's Shop</h1>
+          <p className="parrafoInicio">
+            Elige la comida para perro o gato favorita y en menos de tres horas
+            estará en la puerta de tu casa, también puedes programar la entrega
+            en el horario de tu elección.
+          </p>
+          <button>
+            <Link to={"/tienda"}>IR A LA TIENDA</Link>
+          </button>
+          </div>
+          <div className="gato-container col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <img src={require("../imagen-gato.png")} className="gato" alt="" />
+          </div>
+          <div className="olaContainer">
           <img src={require("../wave-pink.png")} className="fondo" alt="" />
-        </div>
+          </div>
       </div>
       <div>
         <h2>Lorem ipsum dolor sit no </h2>

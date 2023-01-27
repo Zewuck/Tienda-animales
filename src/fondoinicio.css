@@ -2,6 +2,8 @@ body {
     margin: 0;
 }
 
+/* ------------------------------------- Nav Bar -------------------------------------- */
+
 .logo {
     width: 130px;
     height: 110px;
@@ -12,24 +14,35 @@ body {
     background-color: #ff9fc8; 
 }
 
-.container-fluid {
-    background-color: #ff9fc8;
-}
+/* ---------------------------------- Pagina inicio fondo ---------------------------------- */
 
 .title {
     color: #fff;
     font-size: 70px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.row {
+    margin: 0px !important; 
+    padding: 0px !important;
+    --bs-gutter-x: 0px !important;
+}
+
+.parrafoInicio {
+    color: #fff;
+    text-align: center;
 }
 
 .fondo {
     width: 100%;
-    margin-top: -550px;
     height: 100px;
-    vertical-align: bottom;
+    position: relative;
+    margin-top: 500px;
 }
 
-.fondoGato {
-    position: relative;
+.olaContainer{
+    position: absolute;
 }
 
 .background {
@@ -46,7 +59,6 @@ body {
 .gato-container {
     width: 100%;
     height: 100%;
-    position: relative;
 }
 
 .gato {
@@ -55,8 +67,9 @@ body {
     float: right;
 }
 
+/* ------------------------------------- Pagina Inicio -------------------------------------- */
+
 .next {
-    margin-top: -4px;
     width: 100%;
     height: 100px;
     background-color: #fff;
