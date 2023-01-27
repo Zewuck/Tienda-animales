@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { FondoInicio } from "./FondoInicio";
+import AcercaDe from './pages/AcercaDe'
 import Navbar from "./components/Navbar";
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
         {/*elementos*/}
         <Routes>
           <Route path="/" element={<FondoInicio />}></Route>
+          <Route path="/acerca" element={<AcercaDe />}></Route>
         </Routes>
       </div>
     </div>
