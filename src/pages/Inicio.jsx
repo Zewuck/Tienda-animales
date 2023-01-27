@@ -16,16 +16,18 @@ export function Inicio() {
         </button>
         <div className="gato-container">
           <img src={require("../imagen-gato.png")} className="gato" alt="" />
-          <img src={require("../wave.png")} className="fondo" alt="" />
+          <img src={require("../wave-pink.png")} className="fondo" alt="" />
         </div>
       </div>
       <div>
         <h2>Lorem ipsum dolor sit no </h2>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
-          repudiandae suscipit libero, quaerat officiis nisi enim iste, soluta
+          repudiandae suscipit libero, quaerat officiis nisi enim iste, soluta aalksdfjlkasjdlkfjasdfklajsdlfa
         </p>
-        <button><Link to={"/acerca"}>CONOCE MAS SOBRE NOSTROS</Link></button>
+        <button>
+          <Link to={"/acerca"}>CONOCE MAS SOBRE NOSTROS</Link>
+        </button>
       </div>
       <div className="next"> KillYourself</div>
     </>

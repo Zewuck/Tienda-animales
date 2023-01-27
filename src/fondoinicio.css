@@ -11,8 +11,6 @@ body {
     width: 100%;
     margin-top: -550px;
     height: 100px;
-    filter: saturate(100%);
-    color: #7de0e9;
 }
 
 .fondoGato {
@@ -28,6 +26,7 @@ body {
     background-image: url(./fondo-gato.png);
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 .gato-container {
