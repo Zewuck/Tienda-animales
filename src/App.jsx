@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { FondoInicio } from "./FondoInicio";
+import { Inicio } from "./pages/Inicio";
 import AcercaDe from './pages/AcercaDe'
 import Navbar from "./components/Navbar";
 
@@ -11,7 +11,7 @@ const App = () => {
       <div>
         {/*elementos*/}
         <Routes>
-          <Route path="/" element={<FondoInicio />}></Route>
+          <Route path="/" element={<Inicio />}></Route>
           <Route path="/acerca" element={<AcercaDe />}></Route>
         </Routes>
       </div>
