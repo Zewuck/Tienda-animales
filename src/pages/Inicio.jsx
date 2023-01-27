@@ -23,11 +23,37 @@ export function Inicio() {
         <h2>Lorem ipsum dolor sit no </h2>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
-          repudiandae suscipit libero, quaerat officiis nisi enim iste, soluta aalksdfjlkasjdlkfjasdfklajsdlfa
+          repudiandae suscipit libero, quaerat officiis nisi enim iste, soluta
+          aalksdfjlkasjdlkfjasdfklajsdlfa
         </p>
         <button>
           <Link to={"/acerca"}>CONOCE MAS SOBRE NOSTROS</Link>
         </button>
+      </div>
+      <div>
+        <h2>Productos</h2>
+        <div>
+          <img src="" alt="" />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
+            quaerat tempore obcaecati fuga, hic ab rem perferendis ad totam
+            pariatur nulla laborum qui ut enim? Numquam quis natus officia
+            perferendis.
+          </p>
+          <button>Comprar</button>
+        </div>
+      </div>
+      <div>
+        <h2>Blog Cattitos</h2>
+        <div>
+          <img src="" alt="" />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
+            quaerat tempore obcaecati fuga, hic ab rem perferendis ad totam
+            pariatur nulla laborum qui ut enim? Numquam quis natus officia
+            perferendis.
+          </p>
+        </div>
       </div>
       <div className="next"> KillYourself</div>
     </>
