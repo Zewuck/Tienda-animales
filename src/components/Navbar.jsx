@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import {img} from '../assets/imagenes.js'
+
 import "../fondoinicio.css";
 
 export default function Navbar() {
@@ -7,7 +9,7 @@ export default function Navbar() {
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
           <Link to={"/"}>
-          <img src={require("../logo.png")} className="logo" alt="" />
+          <img src={img.logo} className="logo" alt="" />
           </Link>
           <button
             className="navbar-toggler"

@@ -1,5 +1,6 @@
 import "../fondoinicio.css";
 import { Link } from "react-router-dom";
+import {img} from '../assets/imagenes.js'
 
 export function Inicio() {
   return (
@@ -17,10 +18,10 @@ export function Inicio() {
           </button>
           </div>
           <div className="gato-container col-sm-12 col-md-6 col-lg-6 col-xl-6">
-            <img src={require("../imagen-gato.png")} className="gato" alt="" />
+            <img src={img.gato} className="gato" alt="" />
           </div>
           <div className="olaContainer">
-          <img src={require("../wave-pink.png")} className="fondo" alt="" />
+          <img src={img.wave} className="fondo" alt="" />
           </div>
       </div>
       <div>
