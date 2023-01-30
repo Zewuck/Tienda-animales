@@ -25,7 +25,7 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to={"/"}>
+                <Link className="nav-link focus" aria-current="page" to={"/"}>
                   Inicio
                 </Link>
               </li>
@@ -41,7 +41,7 @@ export default function Navbar() {
               </li>
               <li className="nav-item">
                 <Link className="nav-link " to={"/tienda"}>
-                  tienda
+                  Tienda
                 </Link>
               </li>
             </ul>

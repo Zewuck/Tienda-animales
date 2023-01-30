@@ -7,8 +7,8 @@ export function Inicio() {
     <>
       <div className="background row">
         <div className="textoInicioFondo col-sm-12 col-md-6 col-lg-8 col-xl-8">
-          <div>
-            <h1 className="title">Cat's Shop</h1>
+          <div className="textoInicio">
+            <h1 className="title">Domiciolios el mismo dia</h1>
             <p className="parrafoInicio">
               Elige la comida para perro o gato favorita y en menos de tres
               horas estará en la puerta de tu casa, también puedes programar la
@@ -29,7 +29,7 @@ export function Inicio() {
         </div>
       </div>
       <div>
-        <h2>Lorem ipsum dolor sit no </h2>
+        <h2 className="tittle2">Lorem ipsum dolor sit no </h2>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
           repudiandae suscipit libero, quaerat officiis nisi enim iste, soluta
