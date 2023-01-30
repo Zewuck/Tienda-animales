@@ -30,86 +30,103 @@ export function Inicio() {
           <img src={img.gato} className="gato" alt="" />
         </div>
       </div>
-      <div>
-        <h1>Categorias </h1>
-        <div>
-          <img src="" alt="" />
-          <h4>Concentrado</h4>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <h4>Humedo</h4>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <h4>Medicado</h4>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <h4>Arena y accesorios</h4>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <h4>Desparasitantes</h4>
-        </div>
-
-      </div>
-      <div>
-        <div>
-          <img src="" alt="" />
-          <h2>Productos Siempre Disponibles</h2>
-          <p>
-            Aseguramos que los productos que compras están disponibles, evitando
-            esperas o devoluciones de dinero.
-          </p>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <h2>Seguimiento y comunicacion constante</h2>
-          <p>
-            Aseguramos que los productos que compras están disponibles, evitando
-            esperas o devoluciones de dinero.
-          </p>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <h2>En cali entragas el mismo dia</h2>
-          <p>Tendrás tu pedido en tu domicilio en menos de 4 horas.</p>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <h2>Multiples metodos de pagos seguros</h2>
-          <p>
-            Aseguramos que los productos que compras están disponibles, evitando
-            esperas o devoluciones de dinero.
-          </p>
+      <div className="inicio">
+        <h1 className="productos productos-container">
+          Los mejores productos de nuestra tienda
+        </h1>
+        <div className="row productos-container">
+          <div className="col-sm-3 col-md-6 col-lg-3 col-xl-3">
+            <div className="producto imagen-producto1">
+              <h4 className="concentrado">Concentrado</h4>
+            </div>
+          </div>
+          <div className="col-sm-3 col-md-6 col-lg-3 col-xl-3">
+            <div className="producto imagen-producto2">
+              <h4 className="concentrado">Humedo</h4>
+            </div>
+          </div>
+          <div className="col-sm-3 col-md-6 col-lg-3 col-xl-3">
+            <div className="producto imagen-producto3">
+              <h4 className="concentrado">Medicado</h4>
+            </div>
+          </div>
+          <div className="col-sm-3 col-md-6 col-lg-3 col-xl-3">
+            <div className="producto imagen-producto4">
+              <h4 className="concentrado">Arena y Accesorios</h4>
+            </div>
+          </div>
         </div>
       </div>
+      <div className="bloque-bloque-container">
+        <div className="bloque-container row">
+          <div className="bloque row col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3 franja">
+              <img src="" alt="" />
+              <h2>Productos Siempre Disponibles</h2>
+              <p>
+                Aseguramos que los productos que compras están disponibles,
+                evitando esperas o devoluciones de dinero.
+              </p>
+            </div>
+            <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3 franja">
+              <img src="" alt="" />
+              <h2>Seguimiento y comunicacion constante</h2>
+              <p>
+                Aseguramos que los productos que compras están disponibles,
+                evitando esperas o devoluciones de dinero.
+              </p>
+            </div>
+            <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3 franja">
+              <img src="" alt="" />
+              <h2>En cali entragas el mismo dia</h2>
+              <p>Tendrás tu pedido en tu domicilio en menos de 4 horas.</p>
+            </div>
+            <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3 franja">
+              <img src="" alt="" />
+              <h2>Multiples metodos de pagos seguros</h2>
+              <p>
+                Aseguramos que los productos que compras están disponibles,
+                evitando esperas o devoluciones de dinero.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div>
-        <h1>Productos</h1>
-        <div>
-          <img src="" alt="" />
-          <h4>Ecocat- Arena para gatos</h4>
-          <h3>$precio</h3>
-          <button>Comprar</button>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <h4>Ecocat- Arena para gatos</h4>
-          <h3>$precio</h3>
-          <button>Comprar</button>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <h4>Ecocat- Arena para gatos</h4>
-          <h3>$precio</h3>
-          <button>Comprar</button>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <h4>Ecocat- Arena para gatos</h4>
-          <h3>$precio</h3>
-          <button>Comprar</button>
+        <h1 className="productos2">Productos</h1>
+        <div className="row productos2-container">
+          <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div className="gustan">
+              <img src="" alt="" />
+              <h4>Ecocat- Arena para gatos</h4>
+              <h3>$precio</h3>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div className="gustan">
+              <img src="" alt="" />
+              <h4>Ecocat- Arena para gatos</h4>
+              <h3>$precio</h3>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div className="gustan">
+              <img src="" alt="" />
+              <h4>Ecocat- Arena para gatos</h4>
+              <h3>$precio</h3>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <div className="gustan">
+              <img src="" alt="" />
+              <h4>Ecocat- Arena para gatos</h4>
+              <h3>$precio</h3>
+              <button>Comprar</button>
+            </div>
+          </div>
         </div>
       </div>
       <div>
