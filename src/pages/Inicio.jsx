@@ -16,7 +16,12 @@ export function Inicio() {
             </p>
             <div className="buttonContainer">
               <button className="boton">
-                <Link to={"/tienda"} style={{textDecoration: "none", color: "#fff"}}>IR A LA TIENDA</Link>
+                <Link
+                  to={"/tienda"}
+                  style={{ textDecoration: "none", color: "#fff" }}
+                >
+                  IR A LA TIENDA
+                </Link>
               </button>
             </div>
           </div>
@@ -29,39 +34,121 @@ export function Inicio() {
         </div>
       </div>
       <div>
-        <h2>Lorem ipsum dolor sit no </h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
-          repudiandae suscipit libero, quaerat officiis nisi enim iste, soluta
-          aalksdfjlkasjdlkfjasdfklajsdlfa
-        </p>
-        <button>
-          <Link to={"/acerca"}>CONOCE MAS SOBRE NOSTROS</Link>
-        </button>
-      </div>
-      <div>
-        <h2>Productos</h2>
+        <h1>Categorias </h1>
         <div>
           <img src="" alt="" />
+          <h4>Concentrado</h4>
+        </div>
+        <div>
+          <img src="" alt="" />
+          <h4>Humedo</h4>
+        </div>
+        <div>
+          <img src="" alt="" />
+          <h4>Medicado</h4>
+        </div>
+        <div>
+          <img src="" alt="" />
+          <h4>Arena y accesorios</h4>
+        </div>
+        <div>
+          <img src="" alt="" />
+          <h4>Desparasitantes</h4>
+        </div>
+
+      </div>
+      <div>
+        <div>
+          <img src="" alt="" />
+          <h2>Productos Siempre Disponibles</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
-            quaerat tempore obcaecati fuga, hic ab rem perferendis ad totam
-            pariatur nulla laborum qui ut enim? Numquam quis natus officia
-            perferendis.
+            Aseguramos que los productos que compras están disponibles, evitando
+            esperas o devoluciones de dinero.
           </p>
+        </div>
+        <div>
+          <img src="" alt="" />
+          <h2>Seguimiento y comunicacion constante</h2>
+          <p>
+            Aseguramos que los productos que compras están disponibles, evitando
+            esperas o devoluciones de dinero.
+          </p>
+        </div>
+        <div>
+          <img src="" alt="" />
+          <h2>En cali entragas el mismo dia</h2>
+          <p>Tendrás tu pedido en tu domicilio en menos de 4 horas.</p>
+        </div>
+        <div>
+          <img src="" alt="" />
+          <h2>Multiples metodos de pagos seguros</h2>
+          <p>
+            Aseguramos que los productos que compras están disponibles, evitando
+            esperas o devoluciones de dinero.
+          </p>
+        </div>
+      </div>
+      <div>
+        <h1>Productos</h1>
+        <div>
+          <img src="" alt="" />
+          <h4>Ecocat- Arena para gatos</h4>
+          <h3>$precio</h3>
+          <button>Comprar</button>
+        </div>
+        <div>
+          <img src="" alt="" />
+          <h4>Ecocat- Arena para gatos</h4>
+          <h3>$precio</h3>
+          <button>Comprar</button>
+        </div>
+        <div>
+          <img src="" alt="" />
+          <h4>Ecocat- Arena para gatos</h4>
+          <h3>$precio</h3>
+          <button>Comprar</button>
+        </div>
+        <div>
+          <img src="" alt="" />
+          <h4>Ecocat- Arena para gatos</h4>
+          <h3>$precio</h3>
           <button>Comprar</button>
         </div>
       </div>
       <div>
-        <h2>Blog Cattitos</h2>
+        <h1>Testimonios</h1>
         <div>
-          <img src="" alt="" />
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
-            quaerat tempore obcaecati fuga, hic ab rem perferendis ad totam
-            pariatur nulla laborum qui ut enim? Numquam quis natus officia
-            perferendis.
+            Una de las cosas que más destaco es la versatilidad que tienen para
+            poder captar lo que realmente el cliente necesita y lo que el
+            cliente quiere proyectar y dar a conocer en sus páginas digitales.
+            Son una empresa que realmente trabaja para ti con amor, dedicación,
+            compromiso y responsabilidad, nunca hay un no como respuesta.
           </p>
+          <h3>Nombre Apellido</h3>
+          <img src="" alt="" />
+        </div>
+        <div>
+          <p>
+            Una de las cosas que más destaco es la versatilidad que tienen para
+            poder captar lo que realmente el cliente necesita y lo que el
+            cliente quiere proyectar y dar a conocer en sus páginas digitales.
+            Son una empresa que realmente trabaja para ti con amor, dedicación,
+            compromiso y responsabilidad, nunca hay un no como respuesta.
+          </p>
+          <h3>Nombre Apellido</h3>
+          <img src="" alt="" />
+        </div>
+        <div>
+          <p>
+            Una de las cosas que más destaco es la versatilidad que tienen para
+            poder captar lo que realmente el cliente necesita y lo que el
+            cliente quiere proyectar y dar a conocer en sus páginas digitales.
+            Son una empresa que realmente trabaja para ti con amor, dedicación,
+            compromiso y responsabilidad, nunca hay un no como respuesta.
+          </p>
+          <h3>Nombre Apellido</h3>
+          <img src="" alt="" />
         </div>
       </div>
       <div className="next"> KillYourself</div>

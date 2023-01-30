@@ -41,7 +41,7 @@ export default function Navbar() {
               </li>
               <li className="nav-item">
                 <Link className="nav-link " to={"/tienda"}>
-                  tienda
+                  Tienda
                 </Link>
               </li>
             </ul>
