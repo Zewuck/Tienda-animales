@@ -4,7 +4,7 @@ import { img } from "../assets/imagenes.js";
 
 export function Inicio() {
   return (
-    <>
+    <div className="fondoInicio">
       <div className="background row">
         <div className="textoInicioFondo col-sm-12 col-md-6 col-lg-8 col-xl-8">
           <div className="textoInicio">
@@ -23,9 +23,6 @@ export function Inicio() {
         </div>
         <div className="gato-container col-sm-12 col-md-6 col-lg-4 col-xl-4">
           <img src={img.gato} className="gato" alt="" />
-        </div>
-        <div className="olaContainer">
-          <img src={img.wave} className="fondo" alt="" />
         </div>
       </div>
       <div>
@@ -65,6 +62,6 @@ export function Inicio() {
         </div>
       </div>
       <div className="next"> KillYourself</div>
-    </>
+    </div>
   );
 }
