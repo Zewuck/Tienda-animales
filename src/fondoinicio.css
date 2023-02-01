@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -34,7 +39,7 @@ body {
 /* ---------------------------------- Pagina inicio fondo ---------------------------------- */
 
 .fondoInicio {
-    height: 800px;
+    height: 100%;
     width: 100%;
 }
 
@@ -75,7 +80,7 @@ body {
     font-size: 55px;
     text-align: start;
     vertical-align: center;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Boogaloo', cursive;
 }
 
 .row {
@@ -120,10 +125,29 @@ body {
     float: right;
 }
 
-@media (min-width: 770px) and (max-width: 4000px) {
+@media (min-width: 3000px) {
+    .gato {
+        width: 700px;
+        height: 800px;
+    }
+
+    .fondoInicio {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 4000px) {
     .gato-container {
         width: 550px;
         height: 800px;
+    }
+}
+
+@media (min-width: 771px) and (max-width: 890px) {
+    .gato-container {
+        height: 400px;
+        width: 100%;
     }
 }
 
@@ -137,27 +161,22 @@ body {
     }
 }
 
+@media (min-width: 767px) and (max-width: 992px) {
+    .gato-container {
+        height: 500px;
+        width: 400px;
+    }
+}
+
 @media (max-width: 279px) {
     .gato {
         visibility: hidden;
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 4000px) {
     .fondoInicio {
-        height: 500px;
-        width: 100%;
-    }    
-}
-
-@media (min-width: 768px) and (max-width: 950px){
-    .fondoInicio {
-        height: 700px;
-        width: 100%;
-    }    
-
-    .gato {
-        height: 700px;
+        height: 800px;
     }
 }
 
@@ -170,10 +189,6 @@ body {
         height: 600px;
         width: 100%;
     }    
-
-    .textoInicio {
-        margin-top: -200px;
-    }
 }
 
 @media (min-width: 463px) and (max-width: 767px) {
@@ -262,6 +277,23 @@ body {
     background-color: #fff;
     padding: 0px 13px;
     font-size: 90%;
+    color: #140009 
+}
+
+.titulo-2 {
+    position: sticky;
+    z-index: 3;
+    background-color: #fff;
+    padding: 0px 13px;
+    font-size: 60%;
+    margin-top: 100px;
+    color: #923061;
+}
+
+.titulo-2-container {
+    box-sizing: border-box;
+    margin-top: -18px;
+    z-index: 4
 }
 
 .linea2 {
@@ -274,7 +306,7 @@ body {
 }
 
 hr {
-    margin-top: 23px !important;
+    margin-top: 28px !important;
     position: absolute;
     width: 100%;
     background-color: #000;
@@ -654,4 +686,38 @@ hr {
     grid-column: span 2;
     margin-bottom: 10px;
   }
+
+  .nombre-testimonios {
+    font-size: 25px;
+    font-weight: bolder;
+  }
   
+  .testimonios {
+    background-color: #ff9fc8;
+    padding: 0 5px;
+  }
+
+  /* comments */
+  .card{
+    border: none;
+}
+
+ .user-content p{
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+ .ratings i{
+    color: blue;
+}
+ 
+ .fondo-azul {
+    background-color: #81e3eb;
+    padding: 30px;
+    margin-top: 30px;
+    text-align: center;
+ }
+
+ .color-azul {
+    background-color: #81e3eb;
+ }
