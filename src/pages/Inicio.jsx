@@ -312,17 +312,17 @@ export function Inicio() {
             PRODUCTOS QUE MÁS GUSTAN A LOS PELUDITOS EN CATTITOS
           </span>
         </h1>
-        <section class="product">
-          <button class="pre-btn">
+        <section className="product">
+          <button className="pre-btn">
             <img src={img.arrow} alt="" />
           </button>
-          <button class="nxt-btn">
+          <button className="nxt-btn">
             <img src={img.arrow} alt="" />
           </button>
-          <div class="product-container">
-            <div class="product-card2">
-              <div class="product-image2">
-                <span class="discount-tag">50% off</span>
+          <div className="product-container">
+            <div className="product-card2">
+              <div className="product-image2">
+                <span className="discount-tag">50% off</span>
                 <img
                   src={
                     (require =
