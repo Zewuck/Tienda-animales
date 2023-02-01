@@ -5,8 +5,8 @@ import AuthApi from "./utils/AuthAPI";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
-  const [auth, setAuth] = useState(null)
-  const login = ()=>setAuth({id: "1", correo: "pepito@asd.com", contraseña:"123"})
+  const [auth, setAuth] = useState(false)
+
   return (
     <div>
      <AuthApi.Provider value={{auth, setAuth}}>

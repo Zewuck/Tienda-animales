@@ -1,10 +1,5 @@
 import React from 'react'
 
 export default function Dashboard() {
-  return (
-    <div>
-      <h1>Dashboard</h1>
-      <button>logout</button>
-    </div>
-  )
+  return <h1>Dashboard</h1>
 }

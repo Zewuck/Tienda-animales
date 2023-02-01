@@ -67,10 +67,3 @@ const RouteProtected = ({ auth, children }) => {
   return children;
 };
 
-// const RouteRegistration = ({ componet: Componet, ...rest }) => {
-//   return <Route {...rest} render={props => <Componet {...props} />}></Route>;
-// };
-
-// const RouteProtected = ({ componet: Componet, ...rest }) => {
-//     return <Route {...rest} render={props => <Componet {...props} />}></Route>;
-//   };
