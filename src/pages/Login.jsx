@@ -17,9 +17,10 @@ export default function Login() {
               <Field name="username" id="username" type="text"/>
             </div>
             <div>
-              <label htmlFor="password">Usuario</label>
+              <label htmlFor="password">Contraseña</label>
               <Field name="password" id="password" type="password"/>
             </div>
+            <button type="submit">Enviar</button>
           </Form>
         )}
       </Formik>

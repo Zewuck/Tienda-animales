@@ -1,29 +1,21 @@
-import { Route, Routes } from "react-router-dom";
-import { Inicio } from "./pages/Inicio";
-import AcercaDe from './pages/AcercaDe'
-import Contacto from './pages/Contacto'
-import Login from './pages/Login'
-import Register from './pages/Register'
-import Navbar from "./components/Navbar";
-import "bootstrap/dist/css/bootstrap.min.css"
+import React, { useState } from "react";
+import Routes from './routes/routes'
+import { BrowserRouter as Router } from "react-router-dom";
+import AuthApi from "./utils/AuthAPI";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
   return (
     <div>
-      {/*navbar*/}
-      <Navbar/>
-      <div>
-        {/*elementos*/}
-        <Routes>
-          <Route path="/" element={<Inicio />}></Route>
-          <Route path="/acerca" element={<AcercaDe />}></Route>
-          <Route path="/contacto" element={<Contacto />}></Route>
-          <Route path="/login" element={<Login />}></Route>
-          <Route path="/register" element={<Register />}></Route>
-        </Routes>
-      </div>
+     <AuthApi.Provider>
+      <Router>
+        <Routes></Routes>
+      </Router>
+    </AuthApi.Provider>
     </div>
   );
 };
+
+
 
 export default App;

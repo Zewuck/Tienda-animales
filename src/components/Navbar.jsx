@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import {img} from '../assets/imagenes.js'
 
 import "../fondoinicio.css";
@@ -25,34 +25,34 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link className="nav-link focus" aria-current="page" to={"/"}>
+                <NavLink className="nav-link focus" aria-current="page" to={"/"}>
                   Inicio
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"/acerca"}>
+                <NavLink className="nav-link" to={"/acerca"}>
                   Acerca de
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link " to={"/contacto"}>
+                <NavLink className="nav-link " to={"/contacto"}>
                   Contacto
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link " to={"/tienda"}>
+                <NavLink className="nav-link " to={"/tienda"}>
                   Tienda
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link " to={"/login"}>
+                <NavLink className="nav-link " to={"/login"}>
                   Login
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link " to={"/register"}>
+                <NavLink className="nav-link " to={"/register"}>
                   Registro
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>

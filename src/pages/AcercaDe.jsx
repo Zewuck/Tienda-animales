@@ -30,6 +30,9 @@ export default function AcercaDe() {
           customers.
         </p>
       </div>
+      {
+        
+      }
       <div>
         <img src="" alt="" />
       </div>

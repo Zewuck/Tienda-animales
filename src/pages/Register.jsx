@@ -25,6 +25,7 @@ export default function Register() {
               <label htmlFor="password">Contraseña</label>
               <Field name="password" id="password" type="password" required />
             </div>
+            <button type="submit">Enviar</button>
           </Form>
         )}
       </Formik>
