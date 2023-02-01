@@ -5,150 +5,156 @@ import "../fondoinicio.css";
 
 export default function Footer() {
   return (
-        <footer className="text-center text-lg-start bg-light text-muted">
-          {/* <!-- Section: Social media --> */}
-          <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-            {/* <!-- Left --> */}
-            <div className="me-5 d-none d-lg-block">
-              <span>Get connected with us on social networks:</span>
-            </div>
-            {/* <!-- Left -->
-
-        <!-- Right --> */}
-            <div>
-              <a href="" className="me-4 text-reset">
-                <i className="fab fa-facebook-f"></i>
-              </a>
-              <a href="" className="me-4 text-reset">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="" className="me-4 text-reset">
-                <i className="fab fa-google"></i>
-              </a>
-              <a href="" className="me-4 text-reset">
-                <i className="fab fa-instagram"></i>
-              </a>
-              <a href="" className="me-4 text-reset">
-                <i className="fab fa-linkedin"></i>
-              </a>
-              <a href="" className="me-4 text-reset">
-                <i className="fab fa-github"></i>
-              </a>
-            </div>
-            {/* <!-- Right --> */}
-          </section>
-          {/* <!-- Section: Social media -->
-
-      <!-- Section: Links  --> */}
-          <section className="">
-            <div className="container text-center text-md-start mt-5">
-              {/* <!-- Grid row --> */}
-              <div className="row mt-3">
-                {/* <!-- Grid column --> */}
-                <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                  {/* <!-- Content --> */}
-                  <h6 className="text-uppercase fw-bold mb-4">
-                    <i className="fas fa-gem me-3"></i>Company name
-                  </h6>
-                  <p>
-                    Here you can use rows and columns to organize your footer
-                    content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit.
-                  </p>
+    <>
+      <div className="container">
+        <footer className="text-center text-lg-start text-white pink">
+          <div className="container p-4">
+            <div className="row my-4">
+              <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <div
+                  className="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
+                  style={{ width: "150px", height: "150px" }}
+                >
+                  <img
+                    src={img.logo}
+                    height="100"
+                    alt=""
+                    loading="lazy"
+                  />
                 </div>
-                {/* <!-- Grid column -->
 
-            <!-- Grid column --> */}
-                <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                  {/* <!-- Links --> */}
-                  <h6 className="text-uppercase fw-bold mb-4">Products</h6>
-                  <p>
-                    <a href="#!" className="text-reset">
-                      Angular
-                    </a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-reset">
-                      React
-                    </a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-reset">
-                      Vue
-                    </a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-reset">
-                      Laravel
-                    </a>
-                  </p>
-                </div>
-                {/* <!-- Grid column -->
+                <p className="text-center">
+                  Alegres de que confías en nosotros para ser los aliados idoneos de tu amigo peludito
+                </p>
 
-            <!-- Grid column --> */}
-                <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                  {/* <!-- Links --> */}
-                  <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
-                  <p>
-                    <a href="#!" className="text-reset">
-                      Pricing
+                <ul className="list-unstyled d-flex flex-row justify-content-center">
+                  <li>
+                    <a className="text-white px-2" href="#!">
+                      <i className="fab fa-facebook-square"></i>
                     </a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-reset">
-                      Settings
+                  </li>
+                  <li>
+                    <a className="text-white px-2" href="#!">
+                      <i className="fab fa-instagram"></i>
                     </a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-reset">
-                      Orders
+                  </li>
+                  <li>
+                    <a className="text-white ps-2" href="#!">
+                      <i className="fab fa-youtube"></i>
                     </a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-reset">
-                      Help
-                    </a>
-                  </p>
-                </div>
-                {/* <!-- Grid column -->
-
-            <!-- Grid column --> */}
-                <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                  {/* <!-- Links --> */}
-                  <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
-                  <p>
-                    <i className="fas fa-home me-3"></i> New York, NY 10012, US
-                  </p>
-                  <p>
-                    <i className="fas fa-envelope me-3"></i>
-                    info@example.com
-                  </p>
-                  <p>
-                    <i className="fas fa-phone me-3"></i> + 01 234 567 88
-                  </p>
-                  <p>
-                    <i className="fas fa-print me-3"></i> + 01 234 567 89
-                  </p>
-                </div>
-                {/* <!-- Grid column --> */}
+                  </li>
+                </ul>
               </div>
-              {/* <!-- Grid row --> */}
+              <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 className="text-uppercase mb-4">Animals</h5>
+
+                <ul className="list-unstyled">
+                  <li className="mb-2">
+                    <a href="#!" className="text-white">
+                      <i className="fas fa-paw pe-3"></i>When your pet is
+                      missing
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="#!" className="text-white">
+                      <i className="fas fa-paw pe-3"></i>Recently found
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="#!" className="text-white">
+                      <i className="fas fa-paw pe-3"></i>How to adopt?
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="#!" className="text-white">
+                      <i className="fas fa-paw pe-3"></i>Pets for adoption
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="#!" className="text-white">
+                      <i className="fas fa-paw pe-3"></i>Material gifts
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="#!" className="text-white">
+                      <i className="fas fa-paw pe-3"></i>Help with walks
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="#!" className="text-white">
+                      <i className="fas fa-paw pe-3"></i>Volunteer activities
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 className="text-uppercase mb-4">Animals</h5>
+
+                <ul className="list-unstyled">
+                  <li className="mb-2">
+                    <a href="#!" className="text-white">
+                      <i className="fas fa-paw pe-3"></i>General information
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="#!" className="text-white">
+                      <i className="fas fa-paw pe-3"></i>About the shelter
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="#!" className="text-white">
+                      <i className="fas fa-paw pe-3"></i>Statistic data
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="#!" className="text-white">
+                      <i className="fas fa-paw pe-3"></i>Job
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="#!" className="text-white">
+                      <i className="fas fa-paw pe-3"></i>Tenders
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="#!" className="text-white">
+                      <i className="fas fa-paw pe-3"></i>Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 className="text-uppercase mb-4">Contact</h5>
+
+                <ul className="list-unstyled">
+                  <li>
+                    <p>
+                      <i className="fas fa-map-marker-alt pe-2"></i> Bucaramanga, Santander
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <i className="fas fa-phone pe-2"></i>+ 01 234 567 89
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <i className="fas fa-envelope pe-2 mb-0"></i>
+                      contacto@grafi-media.com
+                    </p>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </section>
-          {/* <!-- Section: Links  -->
-
-      <!-- Copyright --> */}
-          <div
-            className="text-center p-4"
-            style = {{background: "rgba(0, 0, 0, 0.05)"}}
-          >
-            © 2021 Copyright:
-            <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
-              MDBootstrap.com
-            </a>
           </div>
-          {/* <!-- Copyright --> */}
-
+          <div
+            className="text-center p-3"
+            style={{ background: "rgba(0, 0, 0, 0.2)" }}
+          >
+            © 2023 Copyright Grafi-Media
+          </div>
         </footer>
+      </div>
+    </>
   );
 }
