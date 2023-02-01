@@ -1,7 +1,10 @@
-import React from "react";
+import React, {useContext} from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import AuthApi from '../utils/AuthAPI';
 
 export default function Register() {
+  const authApi = useContext(AuthApi);
+  
   return (
     <div>
       <Formik
@@ -9,6 +12,10 @@ export default function Register() {
           name: "",
           username: "",
           password: "",
+        }}
+        onSubmit={(values)=>{
+          console.log(values)
+          authApi.setAuth(true);
         }}
       >
         {() => (

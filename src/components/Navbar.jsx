@@ -1,9 +1,12 @@
+import {useContext} from 'react'
 import { NavLink, Link } from "react-router-dom";
 import {img} from '../assets/imagenes.js'
+import AuthApi from '../utils/AuthAPI'
 
 import "../fondoinicio.css";
 
 export default function Navbar() {
+  const authApi = useContext(AuthApi);
   return (
     <div>
       <nav className="navbar navbar-expand-lg">
@@ -44,21 +47,21 @@ export default function Navbar() {
                   Tienda
                 </NavLink>
               </li>
-              <li className="nav-item">
+              {!authApi.auth ? <li className="nav-item">
                 <NavLink className="nav-link " to={"/login"}>
                   Login
                 </NavLink>
-              </li>
-              <li className="nav-item">
+              </li> : null}
+              {!authApi.auth ?<li className="nav-item">
                 <NavLink className="nav-link " to={"/register"}>
                   Registro
                 </NavLink>
-              </li>
-              <li className="nav-item">
+              </li>: null}
+              {authApi.auth ? <li className="nav-item">
                 <NavLink className="nav-link " to={"/dashboard"}>
                   Dashboard
                 </NavLink>
-              </li>
+              </li> : null}
             </ul>
           </div>
         </div>
