@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-
 import { Route, Routes, Navigate } from "react-router-dom";
 import { Inicio } from "../pages/Inicio";
 import AcercaDe from "../pages/AcercaDe";
@@ -8,6 +7,7 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Dashboard from "../pages/Dashboard";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import AuthAPI from "../utils/AuthAPI";
 
 export default function AppRoutes() {
@@ -48,6 +48,9 @@ export default function AppRoutes() {
           />
         </Routes>
       </div>
+      <div>
+        <Footer/>
+      </div>
     </div>
   );
 }
@@ -67,10 +70,4 @@ const RouteProtected = ({ auth, children }) => {
   return children;
 };
 
-// const RouteRegistration = ({ componet: Componet, ...rest }) => {
-//   return <Route {...rest} render={props => <Componet {...props} />}></Route>;
-// };
 
-// const RouteProtected = ({ componet: Componet, ...rest }) => {
-//     return <Route {...rest} render={props => <Componet {...props} />}></Route>;
-//   };

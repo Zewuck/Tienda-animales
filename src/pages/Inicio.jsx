@@ -544,7 +544,7 @@ export function Inicio() {
         </section>
       </div>
       <div className="fondo-azul">
-        <img class="center" src={img.pink} alt=""/>
+        <img className="center" src={img.pink} alt=""/>
         <div className="container mt-5 mb-5">
           <div className="row g-2">
             <div className="col-md-4">
