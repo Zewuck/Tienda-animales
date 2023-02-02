@@ -11,7 +11,10 @@ export default function AcercaDe() {
             <div className="col-lg-6">
               <h1 className="display-4 boogaloo">About us page</h1>
               <p className="lead text-muted mb-0">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A animi commodi veritatis pariatur sapiente facilis repudiandae tenetur quidem libero! Debitis nihil doloremque, praesentium obcaecati facere saepe perferendis sunt necessitatibus cumque!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A animi
+                commodi veritatis pariatur sapiente facilis repudiandae tenetur
+                quidem libero! Debitis nihil doloremque, praesentium obcaecati
+                facere saepe perferendis sunt necessitatibus cumque!
               </p>
             </div>
             <div className="col-lg-6 d-none d-lg-block">
@@ -28,29 +31,30 @@ export default function AcercaDe() {
           <div className="row align-items-center mb-4">
             <div className="col-lg-6 order-2 order-lg-1">
               <i className="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
-              <h2 className="font-weight-light boogaloo">
-                Lorem Ipsum
-              </h2>
+              <h2 className="font-weight-light boogaloo">Lorem Ipsum</h2>
               <p className="font-italic text-muted mb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet est quas doloribus eaque ipsa? Reprehenderit, nihil eos. Fuga, ullam cum? Culpa autem quaerat fugiat, suscipit maxime et eaque cum temporibus?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                est quas doloribus eaque ipsa? Reprehenderit, nihil eos. Fuga,
+                ullam cum? Culpa autem quaerat fugiat, suscipit maxime et eaque
+                cum temporibus? 
               </p>
               <a href="#" className="btn btn-light px-5 rounded-pill shadow-sm">
                 Learn More
               </a>
             </div>
-            <div className="col-lg-5 px-3 order-1 order-lg-2 mx-auto">
+            <div className="col-lg-5 order-1 order-lg-2 mx-auto foto-perro">
               <div className="perro-container">
                 <img
                   src={img.perro2}
                   alt=""
-                  className="img-fluid mb-4 mb-lg-0 perro"
+                  className="img-fluid mb-lg-0 perro"
                 />
               </div>
             </div>
           </div>
           <div className="row align-items-center">
-            <div className="col-lg-5 px-5 mx-auto">
-              <img src={img.perro} alt="" className="img-fluid mb-4 mb-lg-0" />
+            <div className="col-lg-5 px-5 mx-auto perro-container2">
+              <img src={img.perro} alt="" className="img-fluid mb-lg-0 perro2" />
             </div>
             <div className="col-lg-6">
               <i className="fa fa-leaf fa-2x mb-3 text-primary"></i>
@@ -59,9 +63,11 @@ export default function AcercaDe() {
               </h2>
               <p className="font-italic text-muted mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.loremLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.loremLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                
+                eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.loremLorem ipsum dolor sit amet, consectetur adipisicing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.loremLorem ipsum dolor sit amet, consectetur adipisicing
+                elit, sed do
               </p>
               <a href="#" className="btn btn-light px-5 rounded-pill shadow-sm">
                 Learn More
