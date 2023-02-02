@@ -1,10 +1,11 @@
-import React from 'react'
-
+import React, {useContext} from "react";
+import AuthApi from '../utils/AuthAPI';
 export default function Dashboard() {
+  const authApi = useContext(AuthApi);
   return (
-    <div>
+    <>
       <h1>Dashboard</h1>
-      <button>logout</button>
-    </div>
-  )
+      <button onClick={()=>authApi.setAuth(false)}>logOut</button>
+    </>
+  );
 }

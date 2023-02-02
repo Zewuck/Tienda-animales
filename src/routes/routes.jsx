@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 import AuthAPI from "../utils/AuthAPI";
 
 export default function AppRoutes() {
-  const authApi = useContext(AuthAPI);
+
   return (
     <div>
       {/*navbar*/}
@@ -25,7 +25,7 @@ export default function AppRoutes() {
           <Route
             path="/login"
             element={
-              <RouteRegistration auth={authApi.auth}>
+              <RouteRegistration >
                 <Login />
               </RouteRegistration>
             }
@@ -33,7 +33,7 @@ export default function AppRoutes() {
           <Route
             path="/register"
             element={
-              <RouteRegistration auth={authApi.auth}>
+              <RouteRegistration>
                 <Register />
               </RouteRegistration>
             }
@@ -55,19 +55,20 @@ export default function AppRoutes() {
   );
 }
 
-const RouteRegistration = ({ auth, children }) => {
-  if (!auth) {
+const RouteRegistration = ({ children }) => {
+  const authApi = useContext(AuthAPI);
+  if (!authApi.auth) {
     return children;
   } else {
     return <Navigate to="/dashboard" />;
   }
 };
-const RouteProtected = ({ auth, children }) => {
-  if (!auth) {
+const RouteProtected = ({  children }) => {
+  const authApi = useContext(AuthAPI);
+  if (!authApi.auth) {
     return <Navigate to="/login" replace />;
   }
 
   return children;
 };
-
 

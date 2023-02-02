@@ -41,20 +41,17 @@ export function Inicio() {
         </h1>
         <section className="product">
           <button className="pre-btn">
-            <img src={img.arrow} />
+            <img src={img.arrow} alt=""/>
           </button>
           <button className="nxt-btn">
-            <img src={img.arrow} />
+            <img src={img.arrow} alt="" />
           </button>
           <div className="product-container">
             <div className="product-card">
               <div className="product-image">
                 <div className="producto imagen-producto1">
                   <img
-                    src={
-                      (require =
-                        "https://t1.ea.ltmcdn.com/es/posts/3/6/2/los_mejores_alimentos_balanceados_para_perros_21263_600_square.jpg")
-                    }
+                    src={img.concentrado}
                     className="imagen-concentrado"
                     alt=""
                   />
@@ -66,10 +63,7 @@ export function Inicio() {
               <div className="product-image">
                 <div className="producto imagen-producto1">
                   <img
-                    src={
-                      (require =
-                        "https://t1.ea.ltmcdn.com/es/posts/3/6/2/los_mejores_alimentos_balanceados_para_perros_21263_600_square.jpg")
-                    }
+                    src={img.concentrado}
                     className="imagen-concentrado"
                     alt=""
                   />
@@ -81,10 +75,7 @@ export function Inicio() {
               <div className="product-image">
                 <div className="producto imagen-producto1">
                   <img
-                    src={
-                      (require =
-                        "https://t1.ea.ltmcdn.com/es/posts/3/6/2/los_mejores_alimentos_balanceados_para_perros_21263_600_square.jpg")
-                    }
+                    src={img.concentrado}
                     className="imagen-concentrado"
                     alt=""
                   />
@@ -96,10 +87,7 @@ export function Inicio() {
               <div className="product-image">
                 <div className="producto imagen-producto1">
                   <img
-                    src={
-                      (require =
-                        "https://t1.ea.ltmcdn.com/es/posts/3/6/2/los_mejores_alimentos_balanceados_para_perros_21263_600_square.jpg")
-                    }
+                    src={img.concentrado}
                     className="imagen-concentrado"
                     alt=""
                   />
@@ -111,10 +99,7 @@ export function Inicio() {
               <div className="product-image">
                 <div className="producto imagen-producto1">
                   <img
-                    src={
-                      (require =
-                        "https://t1.ea.ltmcdn.com/es/posts/3/6/2/los_mejores_alimentos_balanceados_para_perros_21263_600_square.jpg")
-                    }
+                    src={img.concentrado}
                     className="imagen-concentrado"
                     alt=""
                   />
@@ -126,10 +111,7 @@ export function Inicio() {
               <div className="product-image">
                 <div className="producto imagen-producto1">
                   <img
-                    src={
-                      (require =
-                        "https://t1.ea.ltmcdn.com/es/posts/3/6/2/los_mejores_alimentos_balanceados_para_perros_21263_600_square.jpg")
-                    }
+                    src={img.concentrado}
                     className="imagen-concentrado"
                     alt=""
                   />
@@ -141,10 +123,7 @@ export function Inicio() {
               <div className="product-image">
                 <div className="producto imagen-producto1">
                   <img
-                    src={
-                      (require =
-                        "https://t1.ea.ltmcdn.com/es/posts/3/6/2/los_mejores_alimentos_balanceados_para_perros_21263_600_square.jpg")
-                    }
+                    src={img.concentrado}
                     className="imagen-concentrado"
                     alt=""
                   />
@@ -156,10 +135,7 @@ export function Inicio() {
               <div className="product-image">
                 <div className="producto imagen-producto1">
                   <img
-                    src={
-                      (require =
-                        "https://t1.ea.ltmcdn.com/es/posts/3/6/2/los_mejores_alimentos_balanceados_para_perros_21263_600_square.jpg")
-                    }
+                    src={img.concentrado}
                     className="imagen-concentrado"
                     alt=""
                   />
@@ -171,10 +147,7 @@ export function Inicio() {
               <div className="product-image">
                 <div className="producto imagen-producto1">
                   <img
-                    src={
-                      (require =
-                        "https://t1.ea.ltmcdn.com/es/posts/3/6/2/los_mejores_alimentos_balanceados_para_perros_21263_600_square.jpg")
-                    }
+                    src={img.concentrado}
                     className="imagen-concentrado"
                     alt=""
                   />
@@ -186,10 +159,7 @@ export function Inicio() {
               <div className="product-image">
                 <div className="producto imagen-producto1">
                   <img
-                    src={
-                      (require =
-                        "https://t1.ea.ltmcdn.com/es/posts/3/6/2/los_mejores_alimentos_balanceados_para_perros_21263_600_square.jpg")
-                    }
+                    src={img.concentrado}
                     className="imagen-concentrado"
                     alt=""
                   />
@@ -208,14 +178,7 @@ export function Inicio() {
                 <div className="container-imagen-franja">
                   <div className="container-imagen-franja-caja"></div>
                   <div className="img-container">
-                    <img
-                      src={
-                        (require =
-                          "https://www.wohlpet.com/wp-content/uploads/2022/03/caja-de-entrega.png")
-                      }
-                      alt=""
-                      className="imagen-franja"
-                    />
+                    <img src={img.caja} alt="" className="imagen-franja" />
                   </div>
                 </div>
                 <h2 className="franja-titulo">Productos Siempre Disponibles</h2>
@@ -232,14 +195,7 @@ export function Inicio() {
                 <div className="container-imagen-franja">
                   <div className="container-imagen-franja-caja"></div>
                   <div className="img-container">
-                    <img
-                      src={
-                        (require =
-                          "https://www.wohlpet.com/wp-content/uploads/2022/03/seguimiento-del-tiempo.png")
-                      }
-                      alt=""
-                      className="imagen-franja"
-                    />
+                    <img src={img.camion} alt="" className="imagen-franja" />
                   </div>
                 </div>
                 <h2 className="franja-titulo">
@@ -258,14 +214,7 @@ export function Inicio() {
                 <div className="container-imagen-franja">
                   <div className="container-imagen-franja-caja"></div>
                   <div className="img-container">
-                    <img
-                      src={
-                        (require =
-                          "https://www.wohlpet.com/wp-content/uploads/2020/04/camion.png")
-                      }
-                      alt=""
-                      className="imagen-franja"
-                    />
+                    <img src={img.camion} alt="" className="imagen-franja" />
                   </div>
                 </div>
                 <h2 className="franja-titulo">En cali entragas el mismo dia</h2>
@@ -281,14 +230,7 @@ export function Inicio() {
                 <div className="container-imagen-franja">
                   <div className="container-imagen-franja-caja"></div>
                   <div className="img-container">
-                    <img
-                      src={
-                        (require =
-                          "https://www.wohlpet.com/wp-content/uploads/2020/04/pago-1.png")
-                      }
-                      alt=""
-                      className="imagen-franja"
-                    />
+                    <img src={img.caja} alt="" className="imagen-franja" />
                   </div>
                 </div>
                 <h2 className="franja-titulo">
@@ -323,14 +265,7 @@ export function Inicio() {
             <div className="product-card2">
               <div className="product-image2">
                 <span className="discount-tag">50% off</span>
-                <img
-                  src={
-                    (require =
-                      "https://img.freepik.com/psd-premium/maqueta-bolsa-comida-gatos_23-2149449156.jpg?w=2000")
-                  }
-                  className="product-thumb"
-                  alt=""
-                />
+                <img src={img.petfood} className="product-thumb" alt="" />
                 <button className="card-btn">add to wishlist</button>
               </div>
               <div className="product-info">
@@ -345,14 +280,7 @@ export function Inicio() {
             <div className="product-card2">
               <div className="product-image2">
                 <span className="discount-tag">50% off</span>
-                <img
-                  src={
-                    (require =
-                      "https://img.freepik.com/psd-premium/maqueta-bolsa-comida-gatos_23-2149449156.jpg?w=2000")
-                  }
-                  className="product-thumb"
-                  alt=""
-                />
+                <img src={img.petfood} className="product-thumb" alt="" />
                 <button className="card-btn">add to wishlist</button>
               </div>
               <div className="product-info">
@@ -367,14 +295,7 @@ export function Inicio() {
             <div className="product-card2">
               <div className="product-image2">
                 <span className="discount-tag">50% off</span>
-                <img
-                  src={
-                    (require =
-                      "https://img.freepik.com/psd-premium/maqueta-bolsa-comida-gatos_23-2149449156.jpg?w=2000")
-                  }
-                  className="product-thumb"
-                  alt=""
-                />
+                <img src={img.petfood} className="product-thumb" alt="" />
                 <button className="card-btn">add to wishlist</button>
               </div>
               <div className="product-info">
@@ -389,14 +310,7 @@ export function Inicio() {
             <div className="product-card2">
               <div className="product-image2">
                 <span className="discount-tag">50% off</span>
-                <img
-                  src={
-                    (require =
-                      "https://img.freepik.com/psd-premium/maqueta-bolsa-comida-gatos_23-2149449156.jpg?w=2000")
-                  }
-                  className="product-thumb"
-                  alt=""
-                />
+                <img src={img.petfood} className="product-thumb" alt="" />
                 <button className="card-btn">add to wishlist</button>
               </div>
               <div className="product-info">
@@ -411,14 +325,7 @@ export function Inicio() {
             <div className="product-card2">
               <div className="product-image2">
                 <span className="discount-tag">50% off</span>
-                <img
-                  src={
-                    (require =
-                      "https://img.freepik.com/psd-premium/maqueta-bolsa-comida-gatos_23-2149449156.jpg?w=2000")
-                  }
-                  className="product-thumb"
-                  alt=""
-                />
+                <img src={img.petfood} className="product-thumb" alt="" />
                 <button className="card-btn">add to wishlist</button>
               </div>
               <div className="product-info">
@@ -433,14 +340,7 @@ export function Inicio() {
             <div className="product-card2">
               <div className="product-image2">
                 <span className="discount-tag">50% off</span>
-                <img
-                  src={
-                    (require =
-                      "https://img.freepik.com/psd-premium/maqueta-bolsa-comida-gatos_23-2149449156.jpg?w=2000")
-                  }
-                  className="product-thumb"
-                  alt=""
-                />
+                <img src={img.petfood} className="product-thumb" alt="" />
                 <button className="card-btn">add to wishlist</button>
               </div>
               <div className="product-info">
@@ -455,14 +355,7 @@ export function Inicio() {
             <div className="product-card2">
               <div className="product-image2">
                 <span className="discount-tag">50% off</span>
-                <img
-                  src={
-                    (require =
-                      "https://img.freepik.com/psd-premium/maqueta-bolsa-comida-gatos_23-2149449156.jpg?w=2000")
-                  }
-                  className="product-thumb"
-                  alt=""
-                />
+                <img src={img.petfood} className="product-thumb" alt="" />
                 <button className="card-btn">add to wishlist</button>
               </div>
               <div className="product-info">
@@ -477,14 +370,7 @@ export function Inicio() {
             <div className="product-card2">
               <div className="product-image2">
                 <span className="discount-tag">50% off</span>
-                <img
-                  src={
-                    (require =
-                      "https://img.freepik.com/psd-premium/maqueta-bolsa-comida-gatos_23-2149449156.jpg?w=2000")
-                  }
-                  className="product-thumb"
-                  alt=""
-                />
+                <img src={img.petfood} className="product-thumb" alt="" />
                 <button className="card-btn">add to wishlist</button>
               </div>
               <div className="product-info">
@@ -499,14 +385,7 @@ export function Inicio() {
             <div className="product-card2">
               <div className="product-image2">
                 <span className="discount-tag">50% off</span>
-                <img
-                  src={
-                    (require =
-                      "https://img.freepik.com/psd-premium/maqueta-bolsa-comida-gatos_23-2149449156.jpg?w=2000")
-                  }
-                  className="product-thumb"
-                  alt=""
-                />
+                <img src={img.petfood} className="product-thumb" alt="" />
                 <button className="card-btn">add to wishlist</button>
               </div>
               <div className="product-info">
@@ -521,14 +400,7 @@ export function Inicio() {
             <div className="product-card2">
               <div className="product-image2">
                 <span className="discount-tag">50% off</span>
-                <img
-                  src={
-                    (require =
-                      "https://img.freepik.com/psd-premium/maqueta-bolsa-comida-gatos_23-2149449156.jpg?w=2000")
-                  }
-                  className="product-thumb"
-                  alt=""
-                />
+                <img src={img.petfood} className="product-thumb" alt="" />
                 <button className="card-btn">add to wishlist</button>
               </div>
               <div className="product-info">
@@ -544,18 +416,21 @@ export function Inicio() {
         </section>
       </div>
       <div className="fondo-azul">
+
         <div className="nuestros-clientes-container">
         <img className="center" src={img.pink} alt=""/>
         </div>
+
         <div className="container mt-5 mb-5">
           <div className="row g-2">
             <div className="col-md-4">
               <div className="card p-3 text-center px-4 mx-1">
                 <div className="user-image">
                   <img
-                    src="https://img.freepik.com/vector-gratis/lindo-gato-jugando-mano-telefono-dibujos-animados-vector-icono-ilustracion-concepto-icono-tecnologia-animal-aislado-premium-vector-estilo-dibujos-animados-plana_138676-4231.jpg?w=360"
+                    src={img.gatotel}
                     className="rounded-circle"
                     width="80"
+                    alt=""
                   />
                 </div>
                 <div className="user-content">
@@ -581,9 +456,10 @@ export function Inicio() {
               <div className="card p-3 text-center px-4 mx-1">
                 <div className="user-image">
                   <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoW0q-CwthSkXFuyoH1eR6kW-ren25BGbMbVgYP6hwm5QK7bvFVVzwiwW5_mwTv5n3Gxk&usqp=CAU"
+                    src={img.gatolente}
                     className="rounded-circle"
                     width="80"
+                    alt=""
                   />
                 </div>
 
@@ -612,9 +488,10 @@ export function Inicio() {
               <div className="card p-3 text-center px-4 mx-1">
                 <div className="user-image">
                   <img
-                    src="https://img.freepik.com/vector-gratis/lindo-gato-jugando-mano-telefono-dibujos-animados-vector-icono-ilustracion-concepto-icono-tecnologia-animal-aislado-premium-vector-estilo-dibujos-animados-plana_138676-4231.jpg?w=360"
+                    src={img.gatotel}
                     className="rounded-circle"
                     width="80"
+                    alt=""
                   />
                 </div>
 
