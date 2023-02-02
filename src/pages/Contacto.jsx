@@ -27,8 +27,8 @@ export default function Contacto() {
 
           if (!valores.mensaje) {
             errores.mensaje = "Porfavor ingrese un mensaje";
-          } else if (!/^[\s\S]{0,25}$/.test(valores.nombre)) {
-            errores.mensaje = "el mensaje solo puede tener maximo 25 caracteres ";
+          } else if (!/^[\s\S]{0,400}$/.test(valores.mensaje)) {
+            errores.mensaje = "el mensaje solo puede tener maximo 400 caracteres ";
            }
           return errores;
         }}
