@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import { signIn } from "../components/auth-api";
 import AuthApi from "../utils/AuthAPI";
 
 export default function Login() {
@@ -36,9 +37,14 @@ export default function Login() {
           }
           return errores;
         }}
-        onSubmit={(values) => {
-          console.log(values);
-          authApi.setAuth(true);
+        onSubmit={async (values) => {
+          const email = values.email;
+          const password = values.password;
+          const res = await signIn({ email, password });
+          console.log(res);
+          if (res.data.auth) {
+            authApi.setAuth(true);
+          }
         }}
       >
         {({ errors }) => (
