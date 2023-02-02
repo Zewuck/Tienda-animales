@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import { signUp } from "../components/auth-api";
+
 import AuthApi from "../utils/AuthAPI";
 
 export default function Register() {
@@ -43,27 +45,42 @@ export default function Register() {
           }
           return errores;
         }}
-        onSubmit={(values) => {
-          console.log(values);
-          authApi.setAuth(true);
+        onSubmit={async (values) => {
+          const name = values.name;
+          const email = values.email;
+          const password = values.password;
+          const res = await signUp({ name, email, password });
+          console.log(res);
+          if (res.data.auth) {
+            authApi.setAuth(true);
+          }
         }}
       >
-        {({errors}) => (
+        {({ errors }) => (
           <Form>
             <div>
               <label htmlFor="Nombre">Nombre</label>
               <Field name="name" id="name" type="text" required />
-              <ErrorMessage name="name" component={()=>(<div>{errors.name}</div>)}/>
+              <ErrorMessage
+                name="name"
+                component={() => <div>{errors.name}</div>}
+              />
             </div>
             <div>
               <label htmlFor="email">Email</label>
               <Field name="email" id="email" type="text" required />
-              <ErrorMessage name="email" component={()=>(<div>{errors.email}</div>)}/>
+              <ErrorMessage
+                name="email"
+                component={() => <div>{errors.email}</div>}
+              />
             </div>
             <div>
               <label htmlFor="password">Contraseña</label>
               <Field name="password" id="password" type="password" required />
-              <ErrorMessage name="password" component={()=>(<div>{errors.password}</div>)}/>
+              <ErrorMessage
+                name="password"
+                component={() => <div>{errors.password}</div>}
+              />
             </div>
             <button type="submit">Enviar</button>
           </Form>
