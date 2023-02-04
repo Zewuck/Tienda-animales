@@ -20,6 +20,11 @@ body {
   margin: 0px auto;
 }
 
+.boogaloo {
+  font-family: "Boogaloo", cursive;
+}
+
+
 /* ------------------------------------- Nav Bar -------------------------------------- */
 
 .logo {
@@ -809,7 +814,6 @@ hr {
 @media (min-width: 600px) and (max-width: 992px) {
   .perro-container{
     width: 300px !important;
-    height: 300px !important;
   }
 
   .perro-container2 {
@@ -820,6 +824,11 @@ hr {
   .perro2 {
     width: 500px !important;
     height: 295px !important;
+  }
+
+  .perro {
+    position: relative;
+    z-index: 0;
   }
 }
 
@@ -837,7 +846,6 @@ hr {
 @media (min-width: 381px) and (max-width: 699px) {
   .perro-container{
     width: 250px !important;
-    height: 250px !important;
   }
 
   .perro-container2 {
@@ -914,6 +922,8 @@ hr {
   height: 70%;
 }
 
-.boogaloo {
-  font-family: "Boogaloo", cursive;
+.btn-primary {
+  background-color: #ff9fc8  !important;
+  color: #fff;
+  box-shadow: 0 4px 9px -4px #ff9fc8  !important;
 }
