@@ -46,5 +46,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "backend-tienda-animales-production.up.railway.app"
+  "proxy": "https://backend-tienda-animales-production.up.railway.app"
 }
