@@ -13,6 +13,7 @@ import gatolente from "./img/gato-2.jpeg";
 import conejo from "./img/conejo.png";
 import perro from "./img/perro.png";
 import perro2 from "./img/perro2.png";
+import contacto from "./img/imagen-contacto.png";
 
 export const img = {
   gato,
@@ -29,5 +30,6 @@ export const img = {
   gatolente,
   conejo,
   perro,
-  perro2
+  perro2,
+  contacto
 };
