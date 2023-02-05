@@ -5,7 +5,6 @@ import "../fondoinicio.css";
 export default function Dashboard() {
   const authApi = useContext(AuthApi);
   return (
-<<<<<<< HEAD
     <div className="nav-margin">
       <div className="my-5">
         <div className="text-center py-3">
@@ -26,19 +25,18 @@ export default function Dashboard() {
           </button>
         </div>
       </div>
-=======
-    <div className= "nav-margin">
-      <h1>Dashboard</h1>
-      <h2>Welcome</h2>
-      <button
-        onClick={async() => {
-          const res = await logOut();
-          authApi.setAuth(res.data.auth);
-        }}
-      >
-        logOut
-      </button>
->>>>>>> a5349602961468319f7a5c0a25836e6627c7c806
+      <div className="nav-margin">
+        <h1>Dashboard</h1>
+        <h2>Welcome</h2>
+        <button
+          onClick={async () => {
+            const res = await logOut();
+            authApi.setAuth(res.data.auth);
+          }}
+        >
+          logOut
+        </button>
+      </div>
     </div>
   );
 }

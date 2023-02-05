@@ -95,7 +95,11 @@ export default function Register() {
                                 />
                                 <ErrorMessage
                                   name="email"
-                                  component={() => <div className="warning">{errors.email}</div>}
+                                  component={() => (
+                                    <div className="warning">
+                                      {errors.email}
+                                    </div>
+                                  )}
                                 />
                               </div>
                               <div className="wrap-input1 validate-input form-outline mb-4">
@@ -110,7 +114,11 @@ export default function Register() {
                                 <span className="shadow-input1"></span>
                                 <ErrorMessage
                                   name="password"
-                                  component={() => <div className="warning">{errors.password}</div>}
+                                  component={() => (
+                                    <div className="warning">
+                                      {errors.password}
+                                    </div>
+                                  )}
                                 />
                               </div>
                               <div className="pt-1 mb-4">
@@ -147,9 +155,5 @@ export default function Register() {
         </div>
       </section>
     </div>
-<<<<<<< HEAD
-  );}
-=======
   );
 }
->>>>>>> a5349602961468319f7a5c0a25836e6627c7c806
