@@ -147,9 +147,5 @@ export default function Register() {
         </div>
       </section>
     </div>
-<<<<<<< HEAD
   );}
-=======
-  );
-}
->>>>>>> a5349602961468319f7a5c0a25836e6627c7c806
+
