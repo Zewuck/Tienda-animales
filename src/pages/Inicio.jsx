@@ -18,7 +18,7 @@ export function Inicio() {
               <div className="buttonContainer">
                 <button className="boton btn-inicio">
                   <Link
-                    to={"http://localhost:3000/tienda"}
+                    to={"https://Zewuck.github.io/Tienda-animales/tienda"}
                     style={{ textDecoration: "none", color: "#fff" }}
                   >
                     IR A LA TIENDA
