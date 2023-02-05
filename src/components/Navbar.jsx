@@ -42,11 +42,15 @@ export default function Navbar() {
                   Contacto
                 </NavLink>
               </li>
-              <li className="nav-item">
+             {/* { <li className="nav-item">
                 <NavLink className="nav-link " to={"/tienda"}>
                   Tienda
                 </NavLink>
-              </li>
+              </li> <li className="nav-item">
+                <NavLink className="nav-link " to={"/tienda2"}>
+                  Tienda2
+                </NavLink>
+              </li>} */}
               {!authApi.auth ? <li className="nav-item">
                 <NavLink className="nav-link " to={"/login"}>
                   Login

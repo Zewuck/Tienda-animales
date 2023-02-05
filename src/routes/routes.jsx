@@ -6,6 +6,7 @@ import Contacto from "../pages/Contacto";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Tienda from "../pages/Tienda";
+import Tienda2 from "../pages/Tienda2";
 import Dashboard from "../pages/Dashboard";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -24,6 +25,7 @@ export default function AppRoutes() {
           <Route path="/acerca" element={<AcercaDe />} />
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/tienda" element={<Tienda />} />
+          <Route path="/tienda2" element={<Tienda2 />} />
           <Route
             path="/login"
             element={
