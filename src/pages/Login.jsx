@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import { signUp } from "../components/auth-api";
+import "../fondoinicio.css";
+import { signIn } from "../components/auth-api";
 import { img } from "../assets/imagenes.js";
 
 import AuthApi from "../utils/AuthAPI";
@@ -27,21 +28,11 @@ export default function Register() {
                       <div className="card-body p-4 p-lg-5 text-black">
                         <Formik
                           initialValues={{
-                            name: "",
                             email: "",
                             password: "",
                           }}
                           validate={(valores) => {
                             const errores = {};
-                            if (!valores.name) {
-                              errores.name = "Porfavor ingrese un nombre";
-                            } else if (
-                              !/^[a-zA-ZÀ-ÿ\s]{1,40}$/.test(valores.name)
-                            ) {
-                              errores.name =
-                                "El nombre solo puede contener letras y espacios ";
-                            }
-
                             if (!valores.email) {
                               errores.email =
                                 "Porfavor ingrese un correo electronico";
@@ -53,7 +44,6 @@ export default function Register() {
                               errores.email =
                                 "El correo solo puede contener letras, numeros, puntos, guiones y guion bajo ";
                             }
-
                             if (!valores.password) {
                               errores.password =
                                 "Porfavor ingrese una contraseña";
@@ -64,15 +54,12 @@ export default function Register() {
                             ) {
                               errores.password = `la contraseña debe tener de 8 a 25 caracteres con una combinación de letras, números y símbolos`;
                             }
-
                             return errores;
                           }}
                           onSubmit={async (values) => {
-                            const name = values.name;
                             const email = values.email;
                             const password = values.password;
-                            const res = await signUp({ name, email, password });
-                            console.log(res);
+                            const res = await signIn({ email, password });
                             if (res.data.auth) {
                               authApi.setAuth(true);
                             }
@@ -95,36 +82,21 @@ export default function Register() {
                                   fontSize: "30px",
                                 }}
                               >
-                                Registro
+                                Login
                               </h5>
-                              <div className="wrap-input1 validate-input form-outline mb-4">
-                                <Field
-                                  className="input1"
-                                  name="name"
-                                  placeholder="Name"
-                                  id="name"
-                                  type="text"
-                                  required
-                                />
-                                <span className="shadow-input1"></span>
-                                <ErrorMessage
-                                  name="name"
-                                  component={() => <div>{errors.name}</div>}
-                                />
-                              </div>
                               <div className="wrap-input1 validate-input form-outline mb-4">
                                 <Field
                                   className="input1"
                                   placeholder="Email"
                                   name="email"
                                   id="email"
-                                  type="text"
+                                  type="email"
                                   required
                                 />
                                 <span className="shadow-input1"></span>
                                 <ErrorMessage
                                   name="email"
-                                  component={() => <div>{errors.email}</div>}
+                                  component={() => <div className="warning">{errors.email}</div>}
                                 />
                               </div>
                               <div className="wrap-input1 validate-input form-outline mb-4">
@@ -139,7 +111,7 @@ export default function Register() {
                                 <span className="shadow-input1"></span>
                                 <ErrorMessage
                                   name="password"
-                                  component={() => <div>{errors.password}</div>}
+                                  component={() => <div className="warning">{errors.password}</div>}
                                 />
                               </div>
                               <div className="pt-1 mb-4">
@@ -147,7 +119,7 @@ export default function Register() {
                                   className="btn btn-pink btn-lg btn-block button"
                                   type="submit"
                                 >
-                                  Register
+                                  Login
                                 </button>
                               </div>
 
@@ -176,5 +148,4 @@ export default function Register() {
         </div>
       </section>
     </div>
-  );
-}
+  );}
