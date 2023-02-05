@@ -88,6 +88,7 @@ export default function Contacto() {
                     id="correo"
                     placeholder="Email"
                   />
+                  <span className="shadow-input1"></span>
                   <ErrorMessage
                     name="correo"
                     component={() => <div>{errors.correo}</div>}
@@ -101,6 +102,7 @@ export default function Contacto() {
                     id="subject"
                     placeholder="Subject"
                   />
+                  <span className="shadow-input1"></span>
                   <ErrorMessage
                     name="subject"
                     component={() => <div>{errors.subject}</div>}
@@ -116,6 +118,7 @@ export default function Contacto() {
                     cols="30"
                     placeholder="Message"
                   ></Field>
+                  <span className="shadow-input1"></span>
                   <ErrorMessage
                     name="mensaje"
                     component={() => <div>{errors.mensaje}</div>}

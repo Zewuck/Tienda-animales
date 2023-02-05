@@ -49,6 +49,7 @@ export default function Register() {
                               id="nombre"
                               placeholder="Escriba su Nombre"
                             />
+                            <span className="shadow-input1"></span>
                           </div>
 
                           <div className="wrap-input1 validate-input form-outline mb-4">
@@ -59,6 +60,7 @@ export default function Register() {
                               id="correo"
                               placeholder="Escriba su Email"
                             />
+                            <span className="shadow-input1"></span>
                           </div>
 
                           <div className="wrap-input1 validate-input form-outline mb-4">
@@ -69,6 +71,7 @@ export default function Register() {
                               id="password"
                               placeholder="Escriba su contraseña"
                             />
+                            <span className="shadow-input1"></span>
                           </div>
 
                           <div className="pt-1 mb-4">

@@ -49,6 +49,7 @@ export default function Login() {
                               id="correo"
                               placeholder="Email"
                             />
+                            <span className="shadow-input1"></span>
                           </div>
 
                           <div className="wrap-input1 validate-input form-outline mb-4">
@@ -59,6 +60,7 @@ export default function Login() {
                               id="password"
                               placeholder="Password"
                             />
+                            <span className="shadow-input1"></span>
                           </div>
 
                           <div className="pt-1 mb-4">
