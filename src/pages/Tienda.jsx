@@ -36,10 +36,7 @@ export default function Tienda() {
 
 
   return (
-    <>
-      <h1 className='title'>E-COMMERCE</h1>
-      <hr />
-      <h2 >Products in Stock</h2>
+    <div className="nav-margin">
       <div >
         {
           state.products.map((product) => {
@@ -48,7 +45,8 @@ export default function Tienda() {
         }
       </div>
 
-      <hr />
+      <div>
+        <br /> <br /> ------------------------------------------------------------------------------------------------------------------------------------------------------------</div>
       <h2 >Shopping Cart</h2>
       <div>
         <button  onClick={() => calculateTotalPriceOfCart()}>Total Price</button>
@@ -68,6 +66,6 @@ export default function Tienda() {
           })
         }
       </div>
-    </>
+    </div>
   );
 }
