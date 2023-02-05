@@ -25,18 +25,6 @@ export default function Dashboard() {
           </button>
         </div>
       </div>
-      <div className="nav-margin">
-        <h1>Dashboard</h1>
-        <h2>Welcome</h2>
-        <button
-          onClick={async () => {
-            const res = await logOut();
-            authApi.setAuth(res.data.auth);
-          }}
-        >
-          logOut
-        </button>
-      </div>
     </div>
   );
 }
