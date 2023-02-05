@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/Tienda-animales/static/css/main.f3f3531a.css",
+    "main.js": "/Tienda-animales/static/js/main.1ae7b104.js",
+    "static/media/fondo-gato1.png": "/Tienda-animales/static/media/fondo-gato1.f7f665956808ddca26a5.png",
+    "static/media/fa-solid-900.ttf": "/Tienda-animales/static/media/fa-solid-900.b1a653db79258eeccc5d.ttf",
+    "static/media/perro.png": "/Tienda-animales/static/media/perro.75ac94b6a7e0eebad612.png",
+    "static/media/imagen-gato.png": "/Tienda-animales/static/media/imagen-gato.a0f8cb1db392158ffd74.png",
+    "static/media/perro2.png": "/Tienda-animales/static/media/perro2.637afea1c2d607fe0cf6.png",
+    "static/media/conejo.png": "/Tienda-animales/static/media/conejo.5f880f8232625b7aa824.png",
+    "static/media/fa-brands-400.ttf": "/Tienda-animales/static/media/fa-brands-400.450a5c898f0b184b968b.ttf",
+    "static/media/fa-solid-900.woff2": "/Tienda-animales/static/media/fa-solid-900.41c0f706d8ce93933771.woff2",
+    "static/media/collar.png": "/Tienda-animales/static/media/collar.b888a671808c49ad2f80.png",
+    "static/media/comida-para-gatos.jpg": "/Tienda-animales/static/media/comida-para-gatos.2b48da314e392535bfa9.jpg",
+    "static/media/fa-brands-400.woff2": "/Tienda-animales/static/media/fa-brands-400.3ac6859b28be946745f9.woff2",
+    "static/media/rastrillo.jpg": "/Tienda-animales/static/media/rastrillo.5155875f609fc48f87a8.jpg",
+    "static/media/concentrado.jpg": "/Tienda-animales/static/media/concentrado.bf4c8ec803d7205a5a63.jpg",
+    "static/media/imagen-contacto.png": "/Tienda-animales/static/media/imagen-contacto.a2a58de3cfc0f3984f70.png",
+    "static/media/arena.png": "/Tienda-animales/static/media/arena.5b17a6d018d21f5156c3.png",
+    "static/media/fa-regular-400.ttf": "/Tienda-animales/static/media/fa-regular-400.3cd9fb8fcec4ad0f99d4.ttf",
+    "static/media/hueso.png": "/Tienda-animales/static/media/hueso.620c0eda387fb6dca98b.png",
+    "static/media/raton-juguetes.png": "/Tienda-animales/static/media/raton-juguetes.379d6a6441ae779fdc43.png",
+    "static/media/dogchow.jpg": "/Tienda-animales/static/media/dogchow.f45b0ade18881be895f6.jpg",
+    "static/media/fa-regular-400.woff2": "/Tienda-animales/static/media/fa-regular-400.1f3772178d9e5bed38a6.woff2",
+    "static/media/comida.avif": "/Tienda-animales/static/media/comida.40b5f24f28a920edc32a.avif",
+    "static/media/logo.png": "/Tienda-animales/static/media/logo.4d21ffa0882c2d503571.png",
+    "static/media/title-plink.png": "/Tienda-animales/static/media/title-plink.19d2c9c9a3ee286b9940.png",
+    "static/media/fa-v4compatibility.ttf": "/Tienda-animales/static/media/fa-v4compatibility.e314b618134d5be20996.ttf",
+    "static/media/gato-1.avif": "/Tienda-animales/static/media/gato-1.79bf45eb226f77404ff5.avif",
+    "static/media/fa-v4compatibility.woff2": "/Tienda-animales/static/media/fa-v4compatibility.4ee7f902d88f819e251c.woff2",
+    "index.html": "/Tienda-animales/index.html",
+    "main.f3f3531a.css.map": "/Tienda-animales/static/css/main.f3f3531a.css.map",
+    "main.1ae7b104.js.map": "/Tienda-animales/static/js/main.1ae7b104.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3f3531a.css",
+    "static/js/main.1ae7b104.js"
+  ]
+}
