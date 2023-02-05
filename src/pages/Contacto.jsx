@@ -1,14 +1,34 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import emailjs, { send } from "@emailjs/browser";
 import "../contacto.css";
+
 import { img } from "../assets/imagenes.js";
+import { inputAdornmentClasses } from "@mui/material";
 
 export default function Contacto() {
+  const sendForm = (data) => {
+    emailjs
+      .sendForm(
+        "service_bgkky1j",
+        "template_f8jts96",
+        data,
+        "TUKDGztQhG4wtHJsz"
+      )
+      .then((response) => console.log(response))
+      .catch((response) => console.log(response));
+  };
   return (
     <>
-
       {/* FORMIK */}
-      <div className="contact1 nav-margin" style={{background: "url(https://static.vecteezy.com/system/resources/previews/002/705/240/non_2x/background-of-dog-paw-prints-vector.jpg)", objectFit: "cover"}}>
+      <div
+        className="contact1 nav-margin"
+        style={{
+          background:
+            "url(https://static.vecteezy.com/system/resources/previews/002/705/240/non_2x/background-of-dog-paw-prints-vector.jpg)",
+          objectFit: "cover",
+        }}
+      >
         <div className="container-contact1">
           <div className="contact1-pic js-tilt" data-tilt>
             <img src={img.contacto} className="imagen-contacto" alt="IMG" />
@@ -55,8 +75,16 @@ export default function Contacto() {
               return errores;
             }}
             onSubmit={(valores, { resetForm }) => {
+              const data = {
+                name: valores.nombre,
+                email: valores.correo,
+                subject: valores.subject,
+                message: valores.mensaje,
+              };
+              sendForm(data)
+
               resetForm();
-              console.log(valores);
+              // console.log(valores);
             }}
           >
             {({ errors, handleSubmit, isSubmitting }) => (
@@ -124,9 +152,15 @@ export default function Contacto() {
                     component={() => <div>{errors.mensaje}</div>}
                   />
                 </div>
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="http://localhost:3000/"
+                />
+                <input type="hidden" name="_captcha" value="false" />
 
                 <div className="container-contact1-form-btn button">
-                  <button className="contact1-form-btn button">
+                  <button className="contact1-form-btn button" type="submit">
                     <span>
                       Send Email
                       <i
@@ -136,8 +170,6 @@ export default function Contacto() {
                     </span>
                   </button>
                 </div>
-
-                {/*className="contact1-form-btn button" */}
               </Form>
             )}
           </Formik>

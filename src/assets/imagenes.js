@@ -14,6 +14,12 @@ import conejo from "./img/conejo.png";
 import perro from "./img/perro.png";
 import perro2 from "./img/perro2.png";
 import contacto from "./img/imagen-contacto.png";
+import dogchow from "./img/dogchow.jpg"
+import rastrillo from "./img/rastrillo.jpg"
+import collar from "./img/collar.png"
+import arena from "./img/arena.png"
+import hueso from "./img/hueso.png"
+import raton from "./img/raton-juguetes.png"
 
 export const img = {
   gato,
@@ -31,5 +37,11 @@ export const img = {
   conejo,
   perro,
   perro2,
-  contacto
+  contacto,
+  dogchow,
+  collar,
+  arena,
+  raton,
+  hueso,
+  rastrillo
 };

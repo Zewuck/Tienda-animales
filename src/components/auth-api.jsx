@@ -20,4 +20,5 @@ const logOut = async ()=>{
     return result
 }
 
+
 export {signIn, signUp, hasSignned, logOut}
