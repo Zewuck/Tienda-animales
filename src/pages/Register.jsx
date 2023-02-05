@@ -25,74 +25,144 @@ export default function Register() {
                   <div className="row g-0">
                     <div className="col-md-12 col-lg-12 d-flex align-items-center">
                       <div className="card-body p-4 p-lg-5 text-black">
-                        <form>
-                          <div className="d-flex align-items-center mb-3 pb-1">
-                            <img
-                              src={img.logo}
-                              style={{ color: "#ff6219" }}
-                              className="logo-login"
-                            />
-                          </div>
+                        <Formik
+                          initialValues={{
+                            name: "",
+                            email: "",
+                            password: "",
+                          }}
+                          validate={(valores) => {
+                            const errores = {};
+                            if (!valores.name) {
+                              errores.name = "Porfavor ingrese un nombre";
+                            } else if (
+                              !/^[a-zA-ZÀ-ÿ\s]{1,40}$/.test(valores.name)
+                            ) {
+                              errores.name =
+                                "El nombre solo puede contener letras y espacios ";
+                            }
 
-                          <h5
-                            className="fw-normal mb-3 pb-3 boogaloo"
-                            style={{ letterSpacing: "1px", fontSize: "30px" }}
-                          >
-                            Registro
-                          </h5>
+                            if (!valores.email) {
+                              errores.email =
+                                "Porfavor ingrese un correo electronico";
+                            } else if (
+                              !/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(
+                                valores.email
+                              )
+                            ) {
+                              errores.email =
+                                "El correo solo puede contener letras, numeros, puntos, guiones y guion bajo ";
+                            }
 
-                          <div className="wrap-input1 validate-input form-outline mb-4">
-                            <input
-                              className="input1"
-                              type="nombre"
-                              name="nombre"
-                              id="nombre"
-                              placeholder="Escriba su Nombre"
-                            />
-                          </div>
+                            if (!valores.password) {
+                              errores.password =
+                                "Porfavor ingrese una contraseña";
+                            } else if (
+                              !/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/.test(
+                                valores.password
+                              )
+                            ) {
+                              errores.password = `la contraseña debe tener de 8 a 25 caracteres con una combinación de letras, números y símbolos`;
+                            }
 
-                          <div className="wrap-input1 validate-input form-outline mb-4">
-                            <input
-                              className="input1"
-                              type="correo"
-                              name="correo"
-                              id="correo"
-                              placeholder="Escriba su Email"
-                            />
-                          </div>
+                            return errores;
+                          }}
+                          onSubmit={async (values) => {
+                            const name = values.name;
+                            const email = values.email;
+                            const password = values.password;
+                            const res = await signUp({ name, email, password });
+                            console.log(res);
+                            if (res.data.auth) {
+                              authApi.setAuth(true);
+                            }
+                          }}
+                        >
+                          {({ errors }) => (
+                            <Form>
+                              <div className="d-flex align-items-center mb-3 pb-1">
+                                <img
+                                  src={img.logo}
+                                  style={{ color: "#ff6219" }}
+                                  className="logo-login"
+                                />
+                              </div>
 
-                          <div className="wrap-input1 validate-input form-outline mb-4">
-                            <input
-                              className="input1"
-                              type="password"
-                              name="Password"
-                              id="password"
-                              placeholder="Escriba su contraseña"
-                            />
-                          </div>
+                              <h5
+                                className="fw-normal mb-3 pb-3 boogaloo"
+                                style={{
+                                  letterSpacing: "1px",
+                                  fontSize: "30px",
+                                }}
+                              >
+                                Registro
+                              </h5>
+                              <div className="wrap-input1 validate-input form-outline mb-4">
+                                <Field
+                                  className="input1"
+                                  name="name"
+                                  placeholder="Name"
+                                  id="name"
+                                  type="text"
+                                  required
+                                />
+                                <ErrorMessage
+                                  name="name"
+                                  component={() => <div>{errors.name}</div>}
+                                />
+                              </div>
+                              <div className="wrap-input1 validate-input form-outline mb-4">
+                                <Field
+                                  className="input1"
+                                  placeholder="Email"
+                                  name="email"
+                                  id="email"
+                                  type="text"
+                                  required
+                                />
+                                <ErrorMessage
+                                  name="email"
+                                  component={() => <div>{errors.email}</div>}
+                                />
+                              </div>
+                              <div className="wrap-input1 validate-input form-outline mb-4">
+                                <Field
+                                  placeholder="Contraseña"
+                                  className="input1"
+                                  name="password"
+                                  id="password"
+                                  type="password"
+                                  required
+                                />
+                                <ErrorMessage
+                                  name="password"
+                                  component={() => <div>{errors.password}</div>}
+                                />
+                              </div>
+                              <div className="pt-1 mb-4">
+                                <button
+                                  className="btn btn-pink btn-lg btn-block button"
+                                  type="submit"
+                                >
+                                  Register
+                                </button>
+                              </div>
 
-                          <div className="pt-1 mb-4">
-                            <button
-                              className="btn btn-pink btn-lg btn-block button"
-                              type="button"
-                            >
-                              Login
-                            </button>
-                          </div>
-
-                          <p
-                            className="mb-5 pb-lg-2"
-                            style={{ color: "#393f81" }}
-                          >
-                            ¿Ya tienes cuenta?{" "}
-                            <a href="/login" style={{ color: "#393f81" }}>
-                              Entre aquí
-                            </a>
-                          </p>
-                          <a href="#!" className="small text-muted">
-                            Terms of use Privacy policy
-                          </a>
-                        </form>
+                              <p
+                                className="mb-5 pb-lg-2"
+                                style={{ color: "#393f81" }}
+                              >
+                                ¿Ya tienes cuenta?{" "}
+                                <a href="/login" style={{ color: "#393f81" }}>
+                                  Entre aquí
+                                </a>
+                              </p>
+                              <a href="#!" className="small text-muted">
+                                Terms of use Privacy policy
+                              </a>
+                            </Form>
+                          )}
+                        </Formik>
                       </div>
                     </div>
                   </div>
@@ -102,86 +172,6 @@ export default function Register() {
           </div>
         </div>
       </section>
-      <Formik
-        initialValues={{
-          name: "",
-          email: "",
-          password: "",
-        }}
-        validate={(valores) => {
-          const errores = {};
-          if (!valores.name) {
-            errores.name = "Porfavor ingrese un nombre";
-          } else if (!/^[a-zA-ZÀ-ÿ\s]{1,40}$/.test(valores.name)) {
-            errores.name = "El nombre solo puede contener letras y espacios ";
-          }
-
-          if (!valores.email) {
-            errores.email = "Porfavor ingrese un correo electronico";
-          } else if (
-            !/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(
-              valores.email
-            )
-          ) {
-            errores.email =
-              "El correo solo puede contener letras, numeros, puntos, guiones y guion bajo ";
-          }
-
-          if (!valores.password) {
-            errores.password = "Porfavor ingrese una contraseña";
-          } else if (
-            !/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/.test(
-              valores.password
-            )
-          ) {
-            errores.password = `la contraseña debe tener de 8 a 25 caracteres con una combinación de letras, números y símbolos`;
-          }
-
-          return errores;
-        }}
-        onSubmit={async (values) => {
-          const name = values.name;
-          const email = values.email;
-          const password = values.password;
-          const res = await signUp({ name, email, password });
-          console.log(res);
-          if (res.data.auth) {
-            authApi.setAuth(true);
-          }
-        }}
-      >
-        {({ errors }) => (
-          <Form>
-            <div>
-              <label htmlFor="Nombre">Nombre</label>
-              <Field name="name" id="name" type="text" required />
-              <ErrorMessage
-                name="name"
-                component={() => <div>{errors.name}</div>}
-              />
-            </div>
-            <div>
-              <label htmlFor="email">Email</label>
-              <Field name="email" id="email" type="text" required />
-              <ErrorMessage
-                name="email"
-                component={() => <div>{errors.email}</div>}
-              />
-            </div>
-            <div>
-              <label htmlFor="password">Contraseña</label>
-              <Field name="password" id="password" type="password" required />
-              <ErrorMessage
-                name="password"
-                component={() => <div>{errors.password}</div>}
-              />
-            </div>
-            <button type="submit">Enviar</button>
-            <ErrorMessage component={()=><div>{errors.form}</div>}/>
-            
-          </Form>
-        )}
-      </Formik>
     </div>
   );
 }
