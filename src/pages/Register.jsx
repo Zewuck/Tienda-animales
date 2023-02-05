@@ -106,6 +106,7 @@ export default function Register() {
                                   type="text"
                                   required
                                 />
+                                <span className="shadow-input1"></span>
                                 <ErrorMessage
                                   name="name"
                                   component={() => <div className="warning">{errors.name}</div>}
@@ -134,6 +135,7 @@ export default function Register() {
                                   type="password"
                                   required
                                 />
+                                <span className="shadow-input1"></span>
                                 <ErrorMessage
                                   name="password"
                                   component={() => <div className="warning">{errors.password}</div>}
