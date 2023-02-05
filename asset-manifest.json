@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Tienda-animales/static/css/main.f3f3531a.css",
-    "main.js": "/Tienda-animales/static/js/main.1ae7b104.js",
+    "main.js": "/Tienda-animales/static/js/main.fb22a8f7.js",
     "static/media/fondo-gato1.png": "/Tienda-animales/static/media/fondo-gato1.f7f665956808ddca26a5.png",
     "static/media/fa-solid-900.ttf": "/Tienda-animales/static/media/fa-solid-900.b1a653db79258eeccc5d.ttf",
     "static/media/perro.png": "/Tienda-animales/static/media/perro.75ac94b6a7e0eebad612.png",
@@ -30,10 +30,10 @@
     "static/media/fa-v4compatibility.woff2": "/Tienda-animales/static/media/fa-v4compatibility.4ee7f902d88f819e251c.woff2",
     "index.html": "/Tienda-animales/index.html",
     "main.f3f3531a.css.map": "/Tienda-animales/static/css/main.f3f3531a.css.map",
-    "main.1ae7b104.js.map": "/Tienda-animales/static/js/main.1ae7b104.js.map"
+    "main.fb22a8f7.js.map": "/Tienda-animales/static/js/main.fb22a8f7.js.map"
   },
   "entrypoints": [
     "static/css/main.f3f3531a.css",
-    "static/js/main.1ae7b104.js"
+    "static/js/main.fb22a8f7.js"
   ]
 }
