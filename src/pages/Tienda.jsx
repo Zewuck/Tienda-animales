@@ -37,13 +37,18 @@ export default function Tienda() {
 
   return (
     <div className="nav-margin">
-      <div>
-        <h1>TIENDA</h1>
+      <header className="bg-blue py-5">
+      <div className="container px-4 px-lg-5 my-3">
+        <div className="text-center">
+        <h1 className="display-4 fw-bolder color-texto-shop1">TIENDA</h1>
+        <p className="lead fw-normal color-texto-shop2 mb-0">Los mejores productos para tu peludo</p>
+        </div>
       </div>
+      </header>
       {/* div padre */}
-      <section className="py-5 ">
+      <section>
         <div className="container px-4 px-lg-5 mt-5">
-          <div className="row gx-4 gx-lg-5 row-cols-2 row-cols-m-3 ">
+          <div className="row gx-4 gx-lg-5 row-cols-m-3 ">
             <div className="col mb-5 ">
               <div className="card h-100">
                 <div className="container_grid_products">

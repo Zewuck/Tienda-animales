@@ -5,7 +5,7 @@ import { img } from "../assets/imagenes.js";
 export default function ProductoItem({ data, addToCart }) {
   return (
     <div className="">
-      <img src={img.concentrado} className="card-img-top img-shop " alt="" />
+      <img src={img.concentrado} className="card-img-top img-shop px-2" alt="" />
       <div className="card-body p-4">
         <div className="text-center">
           <h5 className="fw-bolder">{data.name}</h5>
