@@ -961,3 +961,10 @@ hr {
 .btn-pink:hover {
   background-color: #f3bfd6 !important;
 }
+
+/* ------------------- shop ----------------*/
+
+.shop-card {
+  display: flex;
+  background-color: #3494e6;
+}

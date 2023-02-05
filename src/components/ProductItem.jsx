@@ -1,14 +1,12 @@
-import React from "react";
-import { img } from "../assets/imagenes.js";
+import React from 'react'
+import styles from '../style/ProductItem.module.css';
 
 export default function ProductoItem({ data, addToCart }) {
   return (
-    <div>
-      <div>
-        <h2>{data.name}</h2>
-        <p>Price: {data.price}</p>
-        <button onClick={() => addToCart(data.id)}>Add to Cart</button>
-      </div>
+    <div className={styles.container_product}>
+      <h2>{data.name}</h2>
+      <p>Price: {data.price}</p>
+      <button className={styles.btnProduct} onClick={() => addToCart(data.id)}>Add to Cart</button>
     </div>
-  );
+  )
 }
