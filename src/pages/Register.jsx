@@ -6,7 +6,6 @@ import AuthApi from "../utils/AuthAPI";
 
 export default function Register() {
   const authApi = useContext(AuthApi);
-
   return (
     <div>
       <Formik
@@ -43,6 +42,7 @@ export default function Register() {
           ) {
             errores.password = `la contraseña debe tener de 8 a 25 caracteres con una combinación de letras, números y símbolos`;
           }
+
           return errores;
         }}
         onSubmit={async (values) => {
@@ -83,6 +83,8 @@ export default function Register() {
               />
             </div>
             <button type="submit">Enviar</button>
+            <ErrorMessage component={()=><div>{errors.form}</div>}/>
+            
           </Form>
         )}
       </Formik>
