@@ -5,7 +5,7 @@ import "../fondoinicio.css";
 export default function AcercaDe() {
   return (
     <>
-      <div className="bg-light mx-5">
+      <div className="bg-light mx-5 nav-margin">
         <div className="container py-5">
           <div className="row h-100 align-items-center py-2">
             <div className="col-lg-6">

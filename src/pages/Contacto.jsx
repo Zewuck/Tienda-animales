@@ -8,7 +8,7 @@ export default function Contacto() {
     <>
 
       {/* FORMIK */}
-      <div className="contact1">
+      <div className="contact1 nav-margin" style={{background: "url(https://static.vecteezy.com/system/resources/previews/002/705/240/non_2x/background-of-dog-paw-prints-vector.jpg)", objectFit: "cover"}}>
         <div className="container-contact1">
           <div className="contact1-pic js-tilt" data-tilt>
             <img src={img.contacto} className="imagen-contacto" alt="IMG" />

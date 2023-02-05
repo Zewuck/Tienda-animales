@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { signUp } from "../components/auth-api";
+import { img } from "../assets/imagenes.js";
 
 import AuthApi from "../utils/AuthAPI";
 
@@ -9,6 +10,99 @@ export default function Register() {
 
   return (
     <div>
+      <section className="vh-150 nav-margin">
+        <div
+          style={{
+            background:
+              "url(https://img.freepik.com/vector-premium/lindo-patron-transparente-brillante-lapiz-crayon-textura-animal-mascota-pata-colores-pastel_499817-58.jpg?w=740)",
+            objectFit: "cover",
+            opacity: "1",
+          }}
+        >
+          <div className="container py-5 h-100">
+            <div className="row d-flex justify-content-center align-items-center h-100">
+              <div className="col col-sm-6 col-lg-6 col-xl-4">
+                <div className="card" style={{ borderRadius: "1rem" }}>
+                  <div className="row g-0">
+                    <div className="col-md-12 col-lg-12 d-flex align-items-center">
+                      <div className="card-body p-4 p-lg-5 text-black">
+                        <form>
+                          <div className="d-flex align-items-center mb-3 pb-1">
+                            <img
+                              src={img.logo}
+                              style={{ color: "#ff6219" }}
+                              className="logo-login"
+                            />
+                          </div>
+
+                          <h5
+                            className="fw-normal mb-3 pb-3 boogaloo"
+                            style={{ letterSpacing: "1px", fontSize: "30px" }}
+                          >
+                            Registro
+                          </h5>
+
+                          <div className="wrap-input1 validate-input form-outline mb-4">
+                            <input
+                              className="input1"
+                              type="nombre"
+                              name="nombre"
+                              id="nombre"
+                              placeholder="Escriba su Nombre"
+                            />
+                          </div>
+
+                          <div className="wrap-input1 validate-input form-outline mb-4">
+                            <input
+                              className="input1"
+                              type="correo"
+                              name="correo"
+                              id="correo"
+                              placeholder="Escriba su Email"
+                            />
+                          </div>
+
+                          <div className="wrap-input1 validate-input form-outline mb-4">
+                            <input
+                              className="input1"
+                              type="password"
+                              name="Password"
+                              id="password"
+                              placeholder="Escriba su contraseña"
+                            />
+                          </div>
+
+                          <div className="pt-1 mb-4">
+                            <button
+                              className="btn btn-pink btn-lg btn-block button"
+                              type="button"
+                            >
+                              Login
+                            </button>
+                          </div>
+
+                          <p
+                            className="mb-5 pb-lg-2"
+                            style={{ color: "#393f81" }}
+                          >
+                            ¿Ya tienes cuenta?{" "}
+                            <a href="/login" style={{ color: "#393f81" }}>
+                              Entre aquí
+                            </a>
+                          </p>
+                          <a href="#!" className="small text-muted">
+                            Terms of use Privacy policy
+                          </a>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <Formik
         initialValues={{
           name: "",
