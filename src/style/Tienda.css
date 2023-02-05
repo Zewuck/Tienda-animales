@@ -28,3 +28,71 @@
   color: #5d9dfd;
   font-family: Boogaloo, cursive !important;
 }
+
+.btn-outline-dark:hover {
+  background-color: #242424 !important;
+  color: #fff !important
+}
+
+.fw-bolder {
+  font-family: Boogaloo, cursive;
+  font-size: 30px;
+}
+
+.shopping {
+  font-family: Boogaloo, cursive;
+  font-size: 30px;
+}
+
+.card-after {
+}
+
+.img-after {
+  width: 70px !important;
+  height: 70px !important;
+  object-fit: cover;
+}
+
+.after-container {
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.name-after {
+  font-size: 17px;
+}
+
+.price-after {
+  font-size: 17px;
+}
+
+.price {
+  color: #14a44d;
+  font-size: 17px;
+}
+
+.btn-after {
+  height: 30px !important;
+  width: 100px !important;
+  text-align: center;
+  color: #dc4c64;
+  border: 0.125rem solid #dc4c64;
+  border-radius: 10px;
+  font-size: 13px;
+  transition: 0.5s;
+  margin-top: 10px !important;
+}
+
+@media (min-width: 1200px) {
+  .btn-after {
+    height: 33px !important;
+    width: 180px !important;
+  }
+}
+
+.btn-after:hover {
+  background-color: #dc4c64;
+  border-color: #dc4c64;
+  color: #fff;
+}

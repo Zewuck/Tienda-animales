@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../style/ProductItem.css";
+import Style from "../style/Tienda.css";
 import { img } from "../assets/imagenes.js";
 
 export default function ProductoItem({ data, addToCart }) {
