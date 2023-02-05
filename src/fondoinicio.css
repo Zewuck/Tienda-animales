@@ -159,6 +159,11 @@ body {
   float: right;
 }
 
+.warning{
+  color: #dc4c64;
+  font-family: boogaloo;
+}
+
 @media (min-width: 3000px) {
   .gato {
     width: 700px;

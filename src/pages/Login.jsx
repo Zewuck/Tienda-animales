@@ -93,7 +93,6 @@ export default function Register() {
                                   type="email"
                                   required
                                 />
-                                <span className="shadow-input1"></span>
                                 <ErrorMessage
                                   name="email"
                                   component={() => <div className="warning">{errors.email}</div>}
@@ -148,4 +147,9 @@ export default function Register() {
         </div>
       </section>
     </div>
+<<<<<<< HEAD
   );}
+=======
+  );
+}
+>>>>>>> a5349602961468319f7a5c0a25836e6627c7c806
