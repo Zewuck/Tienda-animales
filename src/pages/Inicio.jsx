@@ -18,7 +18,7 @@ export function Inicio() {
               <div className="buttonContainer">
                 <button className="boton btn-inicio">
                   <Link
-                    to={"/tienda"}
+                    to={"http://localhost:3000/tienda"}
                     style={{ textDecoration: "none", color: "#fff" }}
                   >
                     IR A LA TIENDA

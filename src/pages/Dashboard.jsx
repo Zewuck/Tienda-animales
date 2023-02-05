@@ -4,7 +4,7 @@ import { logOut} from "../components/auth-api";
 export default function Dashboard() {
   const authApi = useContext(AuthApi);
   return (
-    <>
+    <div className= "nav-margin">
       <h1>Dashboard</h1>
       <h2>Welcome</h2>
       <button
@@ -15,6 +15,6 @@ export default function Dashboard() {
       >
         logOut
       </button>
-    </>
+    </div>
   );
 }
