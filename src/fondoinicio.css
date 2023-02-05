@@ -11,10 +11,6 @@ body {
   margin: 0;
 }
 
-.nav-link {
-    color: #9b6277 !important;
-}
-
 .inicio {
   max-width: 1065px;
   margin: 0px auto;
@@ -35,21 +31,55 @@ body {
 
 .navbar {
   background-color: #ff9fc8;
+  position: fixed !important;
+  width: 100% !important;
+  z-index: 9;
+  margin-top: -127px;
 }
 
+.nav-link {
+  color: #9b6277 !important;
+}
+
+
 .nav-link:hover {
-  color: #632d41 !important;
+  color: #553944 !important;
 }
 
 .nav-link:focus {
-  color: #9b6277 !important;
+  color: #000 !important;
+}
+
+.nav-margin {
+  margin-top: 127px;
 }
 
 /* ---------------------------------- Pagina inicio fondo ---------------------------------- */
 
 .fondoInicio {
+  margin-top: 127px;
   height: 100%;
   width: 100%;
+}
+
+.btn-inicio{
+  min-width: 153px;
+    height: 50px;
+    border-radius: 25px;
+    background: #ff9fc8;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    transition: all 0.4s;
+    border: none;
+}
+
+.btn-inicio:hover {
+  background-color: #337f85;
 }
 
 .textoInicioFondo {
@@ -61,18 +91,6 @@ body {
 .textoInicio {
   width: 600px;
   padding: 0px 10px;
-}
-
-.boton {
-  background-color: #ff9fc8;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 40px;
 }
 
 .buttonContainer {
@@ -926,4 +944,20 @@ hr {
   background-color: #ff9fc8  !important;
   color: #fff;
   box-shadow: 0 4px 9px -4px #ff9fc8  !important;
+}
+
+.logo-login {
+  height: 150px;
+  width: 170px;
+  margin: 0px auto;
+}
+
+.btn-pink {
+  background-color: #ff9fc8 !important;
+  color: #fff;
+  box-shadow: 0 4px 9px -4px #ff9fc8 !important;
+}
+
+.btn-pink:hover {
+  background-color: #f3bfd6 !important;
 }

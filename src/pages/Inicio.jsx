@@ -16,7 +16,7 @@ export function Inicio() {
                 la entrega en el horario de tu elección.
               </p>
               <div className="buttonContainer">
-                <button className="boton">
+                <button className="boton btn-inicio">
                   <Link
                     to={"/tienda"}
                     style={{ textDecoration: "none", color: "#fff" }}
@@ -41,7 +41,7 @@ export function Inicio() {
         </h1>
         <section className="product">
           <button className="pre-btn">
-            <img src={img.arrow} alt=""/>
+            <img src={img.arrow} alt="" />
           </button>
           <button className="nxt-btn">
             <img src={img.arrow} alt="" />
@@ -416,9 +416,8 @@ export function Inicio() {
         </section>
       </div>
       <div className="fondo-azul">
-
         <div className="nuestros-clientes-container">
-        <img className="center" src={img.pink} alt=""/>
+          <img className="center" src={img.pink} alt="" />
         </div>
 
         <div className="container mt-5 mb-5">
