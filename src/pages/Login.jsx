@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import "../fondoinicio.css";
 import { signIn } from "../components/auth-api";
 import { img } from "../assets/imagenes.js";
 
@@ -59,7 +60,6 @@ export default function Register() {
                             const email = values.email;
                             const password = values.password;
                             const res = await signIn({ email, password });
-                            console.log(res);
                             if (res.data.auth) {
                               authApi.setAuth(true);
                             }
@@ -94,9 +94,9 @@ export default function Register() {
                                   type="email"
                                   required
                                 />
-                                <ErrorMessage
+                                <ErrorMessage 
                                   name="email"
-                                  component={() => <div>{errors.email}</div>}
+                                  component={() => <div className="warning">{errors.email}</div>}
                                 />
                               </div>
                               <div className="wrap-input1 validate-input form-outline mb-4">
@@ -110,7 +110,7 @@ export default function Register() {
                                 />
                                 <ErrorMessage
                                   name="password"
-                                  component={() => <div>{errors.password}</div>}
+                                  component={() => <div className="warning">{errors.password}</div>}
                                 />
                               </div>
                               <div className="pt-1 mb-4">
