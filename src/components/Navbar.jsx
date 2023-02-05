@@ -28,38 +28,38 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <NavLink className="nav-link focus" aria-current="page" to={"https://Zewuck.github.io/Tienda-animales/"}>
+                <NavLink className="nav-link focus" aria-current="page" to={"https://zewuck.github.io/Tienda-animales/"}>
                   Inicio
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to={"https://Zewuck.github.io/Tienda-animales/acerca"}>
+                <NavLink className="nav-link" to={"https://zewuck.github.io/Tienda-animales/acerca"}>
                   Acerca de
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link " to={"https://Zewuck.github.io/Tienda-animales/contacto"}>
+                <NavLink className="nav-link " to={"https://zewuck.github.io/Tienda-animales/contacto"}>
                   Contacto
                 </NavLink>
               </li>
               
               <li className="nav-item">
-                <NavLink className="nav-link " to={"https://Zewuck.github.io/Tienda-animales/tienda"}>
+                <NavLink className="nav-link " to={"https://zewuck.github.io/Tienda-animales/tienda"}>
                   Tienda
                 </NavLink>
               </li> 
               {!authApi.auth ? <li className="nav-item">
-                <NavLink className="nav-link " to={"https://Zewuck.github.io/Tienda-animales/login"}>
+                <NavLink className="nav-link " to={"https://zewuck.github.io/Tienda-animales/login"}>
                   Login
                 </NavLink>
               </li> : null}
               {!authApi.auth ?<li className="nav-item">
-                <NavLink className="nav-link " to={"https://Zewuck.github.io/Tienda-animales/register"}>
+                <NavLink className="nav-link " to={"https://zewuck.github.io/Tienda-animales/register"}>
                   Registro
                 </NavLink>
               </li>: null}
               {authApi.auth ? <li className="nav-item">
-                <NavLink className="nav-link " to={"https://Zewuck.github.io/Tienda-animales/dashboard"}>
+                <NavLink className="nav-link " to={"https://zewuck.github.io/Tienda-animales/dashboard"}>
                   Dashboard
                 </NavLink>
               </li> : null}

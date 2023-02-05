@@ -20,12 +20,12 @@ export default function AppRoutes() {
       <div>
         {/*elementos*/}
         <Routes>
-          <Route path="https://Zewuck.github.io/Tienda-animales/" element={<Inicio />} />
-          <Route path="https://Zewuck.github.io/Tienda-animales/acerca" element={<AcercaDe />} />
-          <Route path="https://Zewuck.github.io/Tienda-animales/contacto" element={<Contacto />} />
-          <Route path="https://Zewuck.github.io/Tienda-animales/tienda" element={<Tienda />} />
+          <Route path="https://zewuck.github.io/Tienda-animales/" element={<Inicio />} />
+          <Route path="https://zewuck.github.io/Tienda-animales/acerca" element={<AcercaDe />} />
+          <Route path="https://zewuck.github.io/Tienda-animales/contacto" element={<Contacto />} />
+          <Route path="https://zewuck.github.io/Tienda-animales/tienda" element={<Tienda />} />
           <Route
-            path="https://Zewuck.github.io/Tienda-animales/login"
+            path="https://zewuck.github.io/Tienda-animales/login"
             element={
               <RouteRegistration >
                 <Login />
@@ -33,7 +33,7 @@ export default function AppRoutes() {
             }
           />
           <Route
-            path="https://Zewuck.github.io/Tienda-animales/register"
+            path="https://zewuck.github.io/Tienda-animales/register"
             element={
               <RouteRegistration>
                 <Register />
@@ -41,7 +41,7 @@ export default function AppRoutes() {
             }
           />
           <Route
-            path="https://Zewuck.github.io/Tienda-animales/dashboard"
+            path="https://zewuck.github.io/Tienda-animales/dashboard"
             element={
               <RouteProtected>
                 <Dashboard />
