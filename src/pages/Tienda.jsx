@@ -38,12 +38,14 @@ export default function Tienda() {
   return (
     <div className="nav-margin">
       <header className="bg-blue py-5">
-      <div className="container px-4 px-lg-5 my-3">
-        <div className="text-center">
-        <h1 className="display-4 fw-bolder color-texto-shop1">TIENDA</h1>
-        <p className="lead fw-normal color-texto-shop2 mb-0">Los mejores productos para tu peludo</p>
+        <div className="container px-4 px-lg-5 my-3">
+          <div className="text-center">
+            <h1 className="display-4 fw-bolder color-texto-shop1">TIENDA</h1>
+            <p className="lead fw-normal color-texto-shop2 mb-0">
+              Los mejores productos para tu peludo
+            </p>
+          </div>
         </div>
-      </div>
       </header>
       {/* div padre */}
       <section>
@@ -52,51 +54,56 @@ export default function Tienda() {
             <div className="col mb-5 ">
               <div className="card h-100">
                 <div className="container_grid_products">
-                {state.products.map((product) => {
-                  return (
-                    <ProductItem
-                      key={product.id}
-                      data={product}
-                      addToCart={addToCart}
-                    />
-                  );
-                })}
+                  {state.products.map((product) => {
+                    return (
+                      <ProductItem
+                        key={product.id}
+                        data={product}
+                        addToCart={addToCart}
+                      />
+                    );
+                  })}
                 </div>
-                
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      
-      <h2>Shopping Cart</h2>
-      <div className="container_buttons">
-        <button
-          className="btn btn_totalPrice"
-          onClick={() => calculateTotalPriceOfCart()}
-        >
-          Total Price
-        </button>
-        {state.totalPriceShoppingCart > 0 && (
-          <p>Total Price: {state.totalPriceShoppingCart}</p>
-        )}
-        <button className="btn btn_ClearCart" onClick={() => clearCart()}>
-          Clear cart
-        </button>
-      </div>
-      {state.cart.length === 0 && <p>There are no products in the cart</p>}
-
-      <div className="container_grid_shopping_cart">
-        {state.cart.map((productCart) => {
-          return (
-            <ShoppingCartProduct
-              key={productCart.id + Math.random() * 50}
-              data={productCart}
-              deleteFromCart={deleteFromCart}
-            />
-          );
-        })}
+      <div>
+        <div className="text-center">
+          <h2 className="shopping">Shopping Cart</h2>
+        </div>
+        <div className="container_buttons text-center">
+          <button
+            className="btn btn_totalPrice"
+            onClick={() => calculateTotalPriceOfCart()}
+          >
+            Total Price
+          </button>
+          {state.totalPriceShoppingCart > 0 && (
+            <p>
+              Total Price:{" "}
+              <span className="price">${state.totalPriceShoppingCart}</span>
+            </p>
+          )}
+          <button className="btn btn_ClearCart" onClick={() => clearCart()}>
+            Clear cart
+          </button>
+        </div>
+        <div className="text-center my-2">
+          {state.cart.length === 0 && <p>There are no products in the cart</p>}
+        </div>
+        <div className="container px-4 px-lg-5 mt-5">
+          {state.cart.map((productCart) => {
+            return (
+              <ShoppingCartProduct
+                key={productCart.id + Math.random() * 50}
+                data={productCart}
+                deleteFromCart={deleteFromCart}
+              />
+            );
+          })}
+        </div>
       </div>
     </div>
   );
