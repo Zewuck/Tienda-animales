@@ -9,12 +9,23 @@ export default function AcercaDe() {
         <div className="container py-5">
           <div className="row h-100 align-items-center py-2">
             <div className="col-lg-6">
-              <h1 className="display-4 boogaloo">About us page</h1>
+              <h1 className="display-4 boogaloo">Sobre Nosotros</h1>
               <p className="lead text-muted mb-0">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A animi
-                commodi veritatis pariatur sapiente facilis repudiandae tenetur
-                quidem libero! Debitis nihil doloremque, praesentium obcaecati
-                facere saepe perferendis sunt necessitatibus cumque!
+                Cattitos es una tienda online de artículos para mascotas que
+                ofrece una amplia gama de productos de alta calidad para todos
+                tus amigos peludos. Creemos que las mascotas son algo más que
+                animales: son parte de la familia y se merecen lo mejor. Por eso
+                ofrecemos sólo los mejores productos, incluyendo comida,
+                juguetes, accesorios y mucho más, todo a precios competitivos.
+              </p>
+              <br />
+              <p className="lead text-muted mb-0">
+                Entendemos que las mascotas son únicas y tienen necesidades
+                diferentes, por lo que contamos con un equipo de expertos a su
+                disposición para asesorarle y ayudarle a encontrar los productos
+                perfectos para su mascota. Nuestro sitio web es fácil de usar y
+                navegar, por lo que te resultará sencillo encontrar exactamente
+                lo que buscas.
               </p>
             </div>
             <div className="col-lg-6 d-none d-lg-block">
@@ -31,12 +42,26 @@ export default function AcercaDe() {
           <div className="row align-items-center mb-4">
             <div className="col-lg-6 order-2 order-lg-1">
               <i className="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
-              <h2 className="font-weight-light boogaloo">Lorem Ipsum</h2>
+              <h2 className="font-weight-light boogaloo">
+                Nos apasiona la sostenibilidad
+              </h2>
               <p className="font-italic text-muted mb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                est quas doloribus eaque ipsa? Reprehenderit, nihil eos. Fuga,
-                ullam cum? Culpa autem quaerat fugiat, suscipit maxime et eaque
-                cum temporibus? 
+                Por eso disponemos de una gama de productos ecológicos. Tanto si
+                buscas comida respetuosa con el medio ambiente, juguetes
+                fabricados con materiales reciclados o accesorios que reduzcan
+                los residuos, tenemos todo lo que necesitas para que tu mascota
+                esté feliz y sana al tiempo que proteges el planeta.
+              </p>
+              <p className="font-italic text-muted mb-4">
+                En Cattitos, creemos que cada pequeña acción marca la
+                diferencia, y nos comprometemos a predicar con el ejemplo.
+                Buscamos constantemente formas de mejorar nuestro impacto
+                medioambiental y de promover la sostenibilidad en el sector de
+                los animales de compañía. Nuestro objetivo es proporcionar a los
+                propietarios de mascotas las herramientas que necesitan para
+                tener un impacto positivo en el medio ambiente y, al mismo
+                tiempo, ofrecer a sus mascotas los mejores productos y servicios
+                posibles.
               </p>
               <a href="#" className="btn btn-light px-5 rounded-pill shadow-sm">
                 Learn More
@@ -54,20 +79,22 @@ export default function AcercaDe() {
           </div>
           <div className="row align-items-center">
             <div className="col-lg-5 px-5 mx-auto perro-container2">
-              <img src={img.perro} alt="" className="img-fluid mb-lg-0 perro2" />
+              <img
+                src={img.perro}
+                alt=""
+                className="img-fluid mb-lg-0 perro2"
+              />
             </div>
             <div className="col-lg-6">
               <i className="fa fa-leaf fa-2x mb-3 text-primary"></i>
               <h2 className="font-weight-light boogaloo">
-                Lorem ipsum dolor sit amet
+                Tus mascotas se merecen lo mejor
               </h2>
               <p className="font-italic text-muted mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna
-                aliqua.loremLorem ipsum dolor sit amet, consectetur adipisicing
-                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua.loremLorem ipsum dolor sit amet, consectetur adipisicing
-                elit, sed do
+              En Cattitos, creemos que cada mascota se merece lo mejor, y nos comprometemos a ofrecer un servicio de primera y productos de calidad a cada cliente. Tanto si es la primera vez que compra como si es un cliente fiel, estamos aquí para ayudarle en todo momento.
+              </p><br />
+              <p className="font-italic text-muted mb-4">
+              ¿Por qué esperar? Visite Cattitos hoy mismo y compruebe por qué somos la tienda online de artículos para mascotas preferida por los dueños de mascotas de todo el mundo.
               </p>
               <a href="#" className="btn btn-light px-5 rounded-pill shadow-sm">
                 Learn More
@@ -81,9 +108,9 @@ export default function AcercaDe() {
         <div className="container py-5">
           <div className="row mb-4">
             <div className="col-lg-5">
-              <h2 className="display-4 font-weight-light boogaloo">Our team</h2>
+              <h2 className="display-4 font-weight-light boogaloo">Nuestro equipo</h2>
               <p className="font-italic text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Los fundadores de esta empresa a tu servicio
               </p>
             </div>
           </div>
@@ -97,7 +124,7 @@ export default function AcercaDe() {
                   width="100"
                   className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
                 />
-                <h5 className="mb-0">Deyner Higuera</h5>
+                <h5 className="mb-0">Santiago Cadenas</h5>
                 <span className="small text-uppercase text-muted">
                   CEO - Founder
                 </span>
@@ -133,7 +160,7 @@ export default function AcercaDe() {
                   width="100"
                   className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
                 />
-                <h5 className="mb-0">Sebastian Almeida</h5>
+                <h5 className="mb-0">Sebastian Arenales</h5>
                 <span className="small text-uppercase text-muted">
                   CEO - Founder
                 </span>
@@ -169,7 +196,7 @@ export default function AcercaDe() {
                   width="100"
                   className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
                 />
-                <h5 className="mb-0">Joel Ochoa</h5>
+                <h5 className="mb-0">Andres Hincapie</h5>
                 <span className="small text-uppercase text-muted">
                   CEO - Founder
                 </span>

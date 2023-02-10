@@ -12,7 +12,6 @@ import Footer from "../components/Footer";
 import AuthAPI from "../utils/AuthAPI";
 
 export default function AppRoutes() {
-
   return (
     <div>
       {/*navbar*/}
@@ -20,20 +19,20 @@ export default function AppRoutes() {
       <div>
         {/*elementos*/}
         <Routes>
-          <Route path="https://zewuck.github.io/Tienda-animales/" element={<Inicio />} />
-          <Route path="https://zewuck.github.io/Tienda-animales/acerca" element={<AcercaDe />} />
-          <Route path="https://zewuck.github.io/Tienda-animales/contacto" element={<Contacto />} />
-          <Route path="https://zewuck.github.io/Tienda-animales/tienda" element={<Tienda />} />
+          <Route path="/" element={<Inicio />} />
+          <Route path="/acerca" element={<AcercaDe />} />
+          <Route path="/contacto" element={<Contacto />} />
+          <Route path="/tienda" element={<Tienda />} />
           <Route
-            path="https://zewuck.github.io/Tienda-animales/login"
+            path="/login"
             element={
-              <RouteRegistration >
+              <RouteRegistration>
                 <Login />
               </RouteRegistration>
             }
           />
           <Route
-            path="https://zewuck.github.io/Tienda-animales/register"
+            path="/register"
             element={
               <RouteRegistration>
                 <Register />
@@ -41,7 +40,7 @@ export default function AppRoutes() {
             }
           />
           <Route
-            path="https://zewuck.github.io/Tienda-animales/dashboard"
+            path="/dashboard"
             element={
               <RouteProtected>
                 <Dashboard />
@@ -51,7 +50,7 @@ export default function AppRoutes() {
         </Routes>
       </div>
       <div>
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );
@@ -65,7 +64,7 @@ const RouteRegistration = ({ children }) => {
     return <Navigate to="/dashboard" />;
   }
 };
-const RouteProtected = ({  children }) => {
+const RouteProtected = ({ children }) => {
   const authApi = useContext(AuthAPI);
   if (!authApi.auth) {
     return <Navigate to="/login" replace />;
@@ -73,4 +72,3 @@ const RouteProtected = ({  children }) => {
 
   return children;
 };
-

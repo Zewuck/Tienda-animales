@@ -16,9 +16,12 @@ import perro2 from "./img/perro2.png";
 import contacto from "./img/imagen-contacto.png";
 import dogchow from "./img/dogchow.jpg"
 import rastrillo from "./img/rastrillo.jpg"
+import clean from "./img/clean.jpg"
 import collar from "./img/collar.png"
 import arena from "./img/arena.png"
 import hueso from "./img/hueso.png"
+import acces from "./img/acces.png"
+import toys from "./img/toys.png"
 import raton from "./img/raton-juguetes.png"
 
 export const img = {
@@ -43,5 +46,8 @@ export const img = {
   arena,
   raton,
   hueso,
-  rastrillo
+  rastrillo,
+  acces,
+  toys,
+  clean
 };
