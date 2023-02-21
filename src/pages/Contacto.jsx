@@ -92,7 +92,7 @@ export default function Contacto() {
                 onSubmit={handleSubmit}
                 className="contact1-form validate-form"
               >
-                <span className="contact1-form-title">Get in touch</span>
+                <span className="contact1-form-title">Ponte En Contacto</span>
 
                 <div className="wrap-input1 validate-input">
                   <Field

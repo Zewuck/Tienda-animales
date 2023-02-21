@@ -28,38 +28,38 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <NavLink className="nav-link focus" aria-current="page" to={"http://localhost:3000/"}>
+                <NavLink className="nav-link focus" aria-current="page" to="/">
                   Inicio
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to={"http://localhost:3000/acerca"}>
+                <NavLink className="nav-link" to="/acerca">
                   Acerca de
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link " to={"http://localhost:3000/contacto"}>
+                <NavLink className="nav-link " to="/contacto">
                   Contacto
                 </NavLink>
               </li>
               
               <li className="nav-item">
-                <NavLink className="nav-link " to={"http://localhost:3000/tienda"}>
+                <NavLink className="nav-link " to="/tienda">
                   Tienda
                 </NavLink>
               </li> 
               {!authApi.auth ? <li className="nav-item">
-                <NavLink className="nav-link " to={"http://localhost:3000/login"}>
+                <NavLink className="nav-link " to="/login">
                   Login
                 </NavLink>
               </li> : null}
               {!authApi.auth ?<li className="nav-item">
-                <NavLink className="nav-link " to={"http://localhost:3000/register"}>
+                <NavLink className="nav-link " to="/register">
                   Registro
                 </NavLink>
               </li>: null}
               {authApi.auth ? <li className="nav-item">
-                <NavLink className="nav-link " to={"http://localhost:3000/dashboard"}>
+                <NavLink className="nav-link " to="/dashboard">
                   Dashboard
                 </NavLink>
               </li> : null}
